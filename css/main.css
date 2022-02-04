@@ -1,0 +1,1297 @@
+/* ------ reseteo navegador ---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+body {
+  font-family: 'Nokora', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+body .background--index {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), color-stop(#f8f8f8), color-stop(#f2f2f2), color-stop(#ebebeb), color-stop(#e5e5e5), color-stop(#dedede), color-stop(#d7d7d8), color-stop(#d0d0d1), color-stop(#c7c7c8), color-stop(#bdbebf), color-stop(#b4b5b6), to(#abacad));
+  background-image: linear-gradient(to right bottom, #ffffff, #f8f8f8, #f2f2f2, #ebebeb, #e5e5e5, #dedede, #d7d7d8, #d0d0d1, #c7c7c8, #bdbebf, #b4b5b6, #abacad);
+}
+
+body .background--productos {
+  background-image: url("https://picsum.photos/id/1021/2000/1600/?blur=5");
+}
+
+body .background--tecno {
+  background-image: url("https://picsum.photos/id/668/2000/1600/?blur=9");
+}
+
+body .background--clientes {
+  background-image: url("https://picsum.photos/id/151/2000/1600/?blur=5");
+}
+
+body .background--nosotros {
+  background-image: url("https://picsum.photos/id/178/2000/1800/?blur=5");
+}
+
+body .background--contacto {
+  background-image: url("https://picsum.photos/id/115/2000/1600/?blur=5");
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-style: none;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- HEADER ----------*/
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  padding: 0.5em;
+  background: linear-gradient(135deg, #212c72 0%, #22398c 40%, #21459b 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header nav ul li:hover a {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(33, 44, 114, 0.4)), color-stop(40%, rgba(34, 57, 140, 0.3)), to(rgba(33, 70, 155, 0.2)));
+  background-image: linear-gradient(0deg, rgba(33, 44, 114, 0.4) 0%, rgba(34, 57, 140, 0.3) 40%, rgba(33, 70, 155, 0.2) 100%);
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: -1px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 16px;
+  }
+  .header i {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header i {
+    display: block;
+  }
+  .header .nav-item--oculto {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+  .header .nav-item--oculto {
+    display: block;
+  }
+  .header i {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .header #btnResponsive {
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+  .header #btnResponsive:hover {
+    -webkit-box-shadow: 0 0 2em 6px #eb6ee0;
+            box-shadow: 0 0 2em 6px #eb6ee0;
+  }
+  .header nav ul li:hover a {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(33, 44, 114, 0.9)), color-stop(40%, rgba(34, 57, 140, 0.5)), to(rgba(33, 70, 155, 0.1)));
+    background-image: linear-gradient(270deg, rgba(33, 44, 114, 0.9) 0%, rgba(34, 57, 140, 0.5) 40%, rgba(33, 70, 155, 0.1) 100%);
+    border-right: 1px solid #ffffff;
+    margin-right: -1px;
+    border-bottom: none;
+    margin-left: 30px;
+    -webkit-transition: all .75s ease-in-out;
+    transition: all .75s ease-in-out;
+  }
+}
+
+.header .header__logo {
+  max-width: 5em;
+  min-width: 3em;
+  min-height: 3em;
+  margin: auto;
+  color: #ffffff;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.header .header__logo img {
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header .header__logo {
+    max-width: 4em;
+    min-width: 2em;
+    min-height: 2em;
+  }
+}
+
+.header .header__logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- Contenedor Index ----------*/
+.contenedor {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 0.7em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	aside' 'footer	 		footer 		footer';
+  justify-items: center;
+  /* ----------------- Hero Index ----------------*/
+  /*---------- Contenido Index ----------*/
+  /*---------- Sidebar Index ----------*/
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor {
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside          aside       aside' 'footer	 		footer 		footer';
+  }
+}
+
+.contenedor .hero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: destacado;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 34, 91, 0.77)), color-stop(24%, rgba(24, 46, 116, 0.78)), color-stop(69%, rgba(24, 48, 150, 0.8)));
+  background: linear-gradient(180deg, rgba(6, 34, 91, 0.77) 0%, rgba(24, 46, 116, 0.78) 24%, rgba(24, 48, 150, 0.8) 69%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr 1.5fr;
+      grid-template-columns: .5fr 1.5fr;
+  height: 100%;
+  width: 93%;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .hero {
+    font-size: 1rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contenedor .hero .hero__contenedor-video {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .contenedor .hero .hero__contenedor-texto .hero__extracto {
+    font-size: 1em;
+    line-height: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #868b8d;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contenedor .hero .hero__contenedor-video {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .contenedor .hero .hero__contenedor .hero__extracto {
+    font-size: 1em;
+    line-height: 1rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.contenedor .hero .hero__contenedor-texto {
+  padding: 1.25em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: linear-gradient to right bottom, #18263f, #1a2945, #1c2c4c, #1e2e52, #213159, #23335f, #263664, #29386a, #2b3b70, #2e3d77, #31407d, #344284;
+}
+
+.contenedor .hero .hero__contenedor-texto .hero__fecha {
+  font-size: 1em;
+  color: #bbbbbb;
+  margin-bottom: 0.63em;
+}
+
+.contenedor .hero .hero__contenedor-texto .hero__titulo a {
+  margin-bottom: .5rem;
+  font-size: .75em;
+  color: #ffffff;
+}
+
+.contenedor .hero .hero__contenedor-texto .hero__titulo::after {
+  content: '';
+  margin: 0.5em 0;
+  display: block;
+  background-color: #868686;
+  width: 6em;
+  height: 1px;
+}
+
+.contenedor .hero .hero__contenedor-texto .hero__extracto {
+  font-size: 1em;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #dddddd;
+}
+
+.contenedor .hero .hero__contenedor-texto .hero__subtitulo {
+  margin-bottom: .63rem;
+  font-size: 1.25em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contenedor .hero .hero__contenedor-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: linear-gradient to right bottom, #18263f, #1a2945, #1c2c4c, #1e2e52, #213159, #23335f, #263664, #29386a, #2b3b70, #2e3d77, #31407d, #344284;
+}
+
+.contenedor .hero .hero__contenedor-video .hero__videoResponsive {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.contenedor .contenido {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contenido;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .contenido {
+    width: 95%;
+  }
+}
+
+.contenedor .contenido .card {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .contenido .card a img {
+    padding: 0.5em;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .contenido .card a img {
+    padding: 1em;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor .contenido .card a img {
+    padding: 0.5em;
+    max-width: 250px;
+  }
+}
+
+.contenedor .contenido .card .card-header.card__backgroundColor {
+  background-image: -webkit-gradient(linear, left top, right top, from(#89253e), to(#3a6186));
+  background-image: linear-gradient(to right, #89253e 0%, #3a6186 100%);
+  color: #ffffff;
+}
+
+.contenedor .contenido .card .cardBtnColor {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3a6186), color-stop(61%, #89253e), to(#3a6186));
+  background-image: linear-gradient(to right, #3a6186 0%, #89253e 61%, #3a6186 100%);
+  margin: 10px;
+  padding: 6px 45px;
+  text-align: center;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+  background-size: 200% auto;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 20px #3f51bb;
+          box-shadow: 0 0 20px #3f51bb;
+  border-radius: 0.625em;
+  display: block;
+  cursor: pointer;
+}
+
+.contenedor .contenido .card .cardBtnColor:hover {
+  background-position: right center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contenedor .sidebar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: aside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5em;
+  text-align: center;
+  min-height: 5.25em;
+  background: linear-gradient(150deg, #061c47 25%, #182e74 60%, #38509c 85%);
+  border-radius: 1em;
+  width: 85%;
+  margin-right: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedor .sidebar .sidebar .sidebar__contenedor .sidebar__parrafo {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .sidebar {
+    width: 85%;
+    margin-right: 0;
+  }
+  .contenedor .sidebar .sidebar__contenedor .sidebar__bio .sidebar__parrafo {
+    font-size: 1em;
+    padding: 1em auto;
+  }
+  .contenedor .sidebar .sidebar__menu {
+    padding: 1em auto;
+    margin-top: 3em;
+  }
+  .contenedor .sidebar .sidebar__menu .sidebar__menu-link {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .sidebar {
+    width: 80%;
+  }
+}
+
+.contenedor .sidebar .sidebar__contenedor .sidebar__img-empresa {
+  border-radius: 100%;
+  max-height: 10em;
+  width: 10em;
+  margin-bottom: 3rem;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.contenedor .sidebar .sidebar__img-empresa:hover {
+  -webkit-transform: scale(1.4) translateY(-1.5em);
+          transform: scale(1.4) translateY(-1.5em);
+  -webkit-box-shadow: 0 0 2em #eb6ee0;
+          box-shadow: 0 0 2em #eb6ee0;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedor .sidebar .sidebar__img-empresa:hover {
+    -webkit-transform: scale(1.2) translateY(1.5em);
+            transform: scale(1.2) translateY(1.5em);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .sidebar .sidebar__img-empresa:hover {
+    -webkit-transform: scale(1.2) translateY(1.5em);
+            transform: scale(1.2) translateY(1.5em);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .sidebar .sidebar__img-empresa:hover {
+    -webkit-transform: scale(1.2) translateY(1.5em);
+            transform: scale(1.2) translateY(1.5em);
+  }
+}
+
+.contenedor .sidebar .sidebar__contenedor .sidebar__bio {
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #ddd;
+}
+
+.contenedor .sidebar .sidebar__contenedor .sidebar__bio .sidebar__titulo {
+  font-size: 1.35em;
+  line-height: 1.5em;
+  color: #eee;
+}
+
+.contenedor .sidebar .sidebar__contenedor .sidebar__bio .sidebar__parrafo {
+  font-size: .85em;
+  line-height: 1.5em;
+}
+
+.contenedor .sidebar .sidebar__menu {
+  max-width: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  margin: 3em 0;
+}
+
+.contenedor .sidebar .sidebar__menu .sidebar__menu-link {
+  padding: auto;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  font-size: 1em;
+}
+
+.contenedor .sidebar .sidebar__menu .sidebar__menu-link:hover {
+  background: #eb6ee130;
+  color: #eb6ee0;
+}
+
+.contenedor .sidebar .sidebar__menu .sidebar__menu-link i {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  padding-right: 0.5em;
+  color: #ffffff;
+}
+
+.contenedor .sidebar .sidebar__menu .sidebar__menu-link:hover i {
+  color: #eb6ee0;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- Contenedor Productos ----------*/
+.contenedor__productos {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1.2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 'header				header   			header' 'main__productos	main__productos		main__productos' 'footer	 			footer 				footer';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contenedor__productos .productos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main__productos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor__productos .productos .productos__titulo {
+  font-size: 1.5em;
+  margin: 1em 1.5em auto;
+}
+
+.contenedor__productos .productos .productos__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor__productos .productos .productos__container .productos__imgContainer {
+  max-width: 15em;
+  max-height: 15rem;
+  margin: .5em;
+  border-radius: 5px;
+  -webkit-transition: all .75s ease-in-out;
+  transition: all .75s ease-in-out;
+}
+
+.contenedor__productos .productos .productos__container .productos__imgContainer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 20px #eb6ee0;
+          box-shadow: 0 0 20px #eb6ee0;
+}
+
+.contenedor__productos .productos .productos__container .productos__video-virtual {
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- Contenedor Tecnologia -----------*/
+.contenedor__tecno {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1.2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 'header		header		header' 'tecno		tecno		tecno' 'footer	 	footer 		footer';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contenedor__tecno .tecno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: tecno;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__tecno .tecno .tecno__hard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__tituloHard, .contenedor__tecno .tecno .tecno__hard .tecno__tituloSoft {
+  margin: 1.25em auto;
+  margin-top: 0.5em;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__tituloSoft {
+  margin-top: 2em;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg {
+  max-width: 70%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 2em;
+  margin-top: 0.5em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg .tecno__img {
+  border-radius: 50%;
+  border: 5px solid #aa155a;
+  max-width: 10em;
+  max-height: 10em;
+  margin: 1.5em;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg .tecno__img:hover {
+  max-width: 10em;
+  max-height: 10em;
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
+  -webkit-box-shadow: 0 0 15px #eb6ee0;
+          box-shadow: 0 0 15px #eb6ee0;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg .tecno__img--modal {
+  max-width: 8em;
+  max-height: 8em;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg .modal__backgroundColor {
+  background-image: -webkit-gradient(linear, left top, right top, from(#89253e), to(#3a6186));
+  background-image: linear-gradient(to right, #89253e 0%, #3a6186 100%);
+  color: #ffffff;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg .modalBtnColor {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3a6186), color-stop(61%, #89253e), to(#3a6186));
+  background-image: linear-gradient(to right, #3a6186 0%, #89253e 61%, #3a6186 100%);
+  text-align: center;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+  background-size: 200% auto;
+  -webkit-box-shadow: 0 0 20px #3f51bb;
+          box-shadow: 0 0 20px #3f51bb;
+  border-radius: 0.5em;
+  width: 7.5em;
+}
+
+.contenedor__tecno .tecno .tecno__hard .tecno__contenedorImg .modalBtnColor:hover {
+  background-position: right center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- Contenedor Clientes -----------*/
+.contenedor__clientes {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1.2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 'header			header   		header' 'mainClientes	mainClientes	mainClientes' 'footer	 		footer 			footer';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.clientes {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: mainClientes;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientes .clientes__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.clientes .clientes__container .clientes__titulo {
+  margin: 0.75em auto;
+}
+
+.clientes .clientes__container .clientes__imgContainer {
+  max-width: 10em;
+  max-height: 10rem;
+  margin: .5em;
+  border-radius: 5px;
+}
+
+.clientes .clientes__container .clientes__imgContainer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 20px #eb6ee0;
+          box-shadow: 0 0 20px #eb6ee0;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- Contenedor Nosotros -----------*/
+.contenedor__nos {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1.2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 'header		header   	header' 'mainNos	mainNos		mainNos' 'footer	 	footer 		footer';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contenedor__nos .nosotros {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: mainNos;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor__nos .nosotros .nosotros__titulo {
+  font-size: 2.5em;
+  color: #111;
+  margin-top: 0.7em;
+}
+
+.contenedor__nos .nosotros .nosotros__subtitulo {
+  font-size: 1.5em;
+  color: #444;
+  margin-top: 0.5em;
+}
+
+.contenedor__nos .nosotros .nosotros__subtitulo--modificado {
+  font-size: 1.5em;
+  color: #ddd;
+  margin-top: 1.5em;
+}
+
+.contenedor__nos .nosotros .container.container--historia {
+  background: -webkit-gradient(linear, left bottom, left top, from(#061c47), color-stop(#6b204c), to(#213c92));
+  background: linear-gradient(0deg, #061c47, #6b204c, #213c92);
+}
+
+.contenedor__nos .nosotros .nosotros__subtitulo--video {
+  font-size: 1.3em;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+.contenedor__nos .nosotros .nosotros__parrafo {
+  font-size: 1.2em;
+  color: #eee;
+}
+
+.contenedor__nos .nosotros .nosotros__imgOrga {
+  width: 70%;
+  margin: 2em auto;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 20px #eb6ee0;
+          box-shadow: 0 0 20px #eb6ee0;
+}
+
+.contenedor__nos .nosotros .nosotros__video-nos {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/* ---------- Contenedor Contacto ----------*/
+.contenedor__contacto {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1.2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 'header		header   	header' 'form		form		form' 'footer	 	footer 		footer';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contenedor__contacto .contacto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: form;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor__contacto .contacto .itemsContacto--title {
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.contenedor__contacto .contacto .itemsContacto--title i {
+  margin-right: 1.5em;
+}
+
+.contenedor__contacto .contacto .itemsContacto--title--redes {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.contenedor__contacto .contacto .containerForm {
+  background: -webkit-gradient(linear, left bottom, left top, from(#061c47), color-stop(#6b204c), to(#213c92));
+  background: linear-gradient(0deg, #061c47, #6b204c, #213c92);
+  max-width: 35em;
+  height: 100%;
+  margin: 2em auto;
+  border-radius: 1em;
+}
+
+.contenedor__contacto .contacto .containerForm--work {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6b204c), color-stop(#692258), color-stop(#642566), color-stop(#5a2b73), color-stop(#4b3281), color-stop(#534490), color-stop(#5b559f), color-stop(#6567ad), color-stop(#8d8ac1), color-stop(#b3b0d6), color-stop(#d9d7ea), to(#ffffff));
+  background-image: linear-gradient(to right bottom, #6b204c, #692258, #642566, #5a2b73, #4b3281, #534490, #5b559f, #6567ad, #8d8ac1, #b3b0d6, #d9d7ea, #ffffff);
+  max-width: 30em;
+  height: 100%;
+  margin: 2em auto;
+  border-radius: 1em;
+}
+
+.contenedor__contacto .contacto .accordion-button {
+  background-image: -webkit-gradient(linear, right top, left top, from(#89253e), to(#3a6186));
+  background-image: linear-gradient(to left, #89253e 0%, #3a6186 100%);
+  color: #ffffff;
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+/*---------- FOOTER ----------*/
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(20%, #999999), color-stop(75%, #666666));
+  background: linear-gradient(90deg, #222222 0%, #999999 20%, #666666 75%);
+  color: #ffffff;
+  font-size: .85em;
+  padding: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.footer .footer__titulo {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__titulo {
+    font-size: .85rem;
+  }
+}
+
+.footer .footer__item {
+  color: #ffffff;
+  margin: auto 1.75em;
+  font-size: 1.2em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__item {
+    font-size: 1rem;
+    margin: auto 1.25em;
+  }
+}
+
+.footer .footer__item:hover i {
+  color: #eb6ee0;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+/*---------- @MEDIA-QUERIES ----------*/
+/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Small devices (landscape phones, 576px and up) */
+.body__404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0px 1.875em;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), color-stop(#f8f8f8), color-stop(#f2f2f2), color-stop(#ebebeb), color-stop(#e5e5e5), color-stop(#dedede), color-stop(#d7d7d8), color-stop(#d0d0d1), color-stop(#c7c7c8), color-stop(#bdbebf), color-stop(#b4b5b6), to(#abacad));
+  background-image: linear-gradient(to right bottom, #ffffff, #f8f8f8, #f2f2f2, #ebebeb, #e5e5e5, #dedede, #d7d7d8, #d0d0d1, #c7c7c8, #bdbebf, #b4b5b6, #abacad);
+}
+
+.body__404 .wrapper {
+  max-width: 60em;
+  width: 100%;
+  margin: 1.875em auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.body__404 .wrapper .landing-page {
+  max-width: 60em;
+  height: 55em;
+  margin: 0;
+  -webkit-box-shadow: 0px 0px 10px 10px #ccc;
+          box-shadow: 0px 0px 10px 10px #ccc;
+  background: #fafafa;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__404 .wrapper .landing-page .body__404--titulo {
+  font-size: 3.5em;
+  margin: 1em;
+  margin-bottom: 0.5em;
+}
+
+.body__404 .wrapper .landing-page .body__404--parrafo {
+  font-size: 1.25em;
+  width: 50%;
+  margin: 1em auto 1.5em;
+  text-align: center;
+}
+
+.body__404 .wrapper .landing-page .body__404--imagen {
+  max-width: 85%;
+  max-height: 100%;
+}
+
+.body__404 .wrapper .landing-page .body__404--container {
+  width: 30em;
+  height: 25%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__404 .wrapper .landing-page .body__404--container .size {
+  color: #0011ff;
+  font-size: 1.8em;
+}
+
+.body__404 .wrapper .landing-page .body__404--container .body__404--nuestrosdev {
+  font-size: 1.25em;
+  width: 50%;
+  margin: 0 .2em;
+  text-align: center;
+}
+
+.body__404 .wrapper .landing-page .body__404--boton {
+  border-radius: 50px;
+  margin: 2em;
+  padding: 10px 30px;
+  font-size: 1.1em;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  background-size: 200% auto;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#25abe0), color-stop(51%, #dedede), to(#25abe0));
+  background-image: linear-gradient(to right, #25abe0 0%, #dedede 51%, #25abe0 100%);
+  color: #444;
+  -webkit-box-shadow: 0 0 4px 4px #0ec9b0;
+          box-shadow: 0 0 4px 4px #0ec9b0;
+}
+
+.body__404 .wrapper .landing-page .body__404--boton:hover {
+  background-position: right center;
+  -webkit-box-shadow: 0 0 6px 6px #b255dd;
+          box-shadow: 0 0 6px 6px #b255dd;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,106 @@
+@import "../variables";
+@import "../media_queries";
+
+/* ---------- Contenedor Tecnologia -----------*/
+
+.contenedor__tecno {
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-row-gap: 0.5em;
+	grid-column-gap: 1.2em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		'header		header		header'
+		'tecno		tecno		tecno'
+		'footer	 	footer 		footer';
+	align-items: center;
+	justify-content: center;
+	align-content: center;	
+
+	.tecno {
+		grid-area: tecno;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+
+	.tecno__hard {
+		width: 100%;
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		margin-top: 0.5em;
+		margin-bottom: 5em;
+		margin-left: auto;
+		margin-right: auto;
+		
+		.tecno__tituloHard {
+			margin: 1.25em auto;
+			margin-top: 0.5em;
+		}
+
+		.tecno__tituloSoft {
+			@extend .tecno__tituloHard;
+			margin-top: 2em;
+		}
+
+		.tecno__contenedorImg {
+			max-width: 70%;
+			max-height: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			margin: 2em;
+			margin-top: 0.5em;
+			justify-content: space-around;
+			
+
+			.tecno__img {
+				border-radius: 50%;
+				border: 5px solid #aa155a;
+				max-width: 10em;
+				max-height: 10em;
+				margin: 1.5em;
+				transition: all 0.8s ease-in-out;
+			}
+
+			.tecno__img:hover {
+				max-width: 10em;
+				max-height: 10em;
+				transform: rotate(360deg) scale(1.2);
+				box-shadow: 0 0 15px $colorHoverLink;
+			}
+
+			.tecno__img--modal {
+				max-width: 8em;
+				max-height: 8em;
+			}
+
+			.modal__backgroundColor {
+                background-image: $colorHeaderCard;
+                color: $blanco;
+            }
+
+			.modalBtnColor {
+                color: $blanco;
+                background-image: $colorBtnCard;
+                text-align: center;
+                transition: all 0.9s ease;
+				background-size: 200% auto;
+				box-shadow: 0 0 20px #3f51bb;
+                border-radius: 0.5em;
+				width: 7.5em;
+			}
+            
+            .modalBtnColor:hover {
+                background-position: right center;
+                color: $blanco;
+                text-decoration: none;
+            }
+		}
+	}
+}
+}

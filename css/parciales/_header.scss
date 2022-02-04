@@ -1,0 +1,102 @@
+@import "./variables";
+@import "./media_queries";
+
+/* ---------- HEADER ----------*/
+.header {
+	grid-area: header;
+	padding: 0.5em;
+	background: $colorHeader;
+	display: flex;
+	position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+	width: 100%;
+
+    nav ul li:hover a {
+        background-image: linear-gradient(0deg, rgba(33,44,114,0.4) 0%, rgba(34,57,140,0.30) 40%, rgba(33, 70, 155, 0.20) 100%); 
+        border-bottom: 1px solid $blanco;
+        margin-bottom: -1px;
+        
+    }
+
+    @include largeDesktops {
+        font-size: 16px;
+            
+            & i {
+                display: block;
+                margin-bottom: 10px;
+            }
+    }        
+
+    @include desktops {
+        & i {
+			display: block;
+        }
+
+		.nav-item--oculto {
+				display: none;
+		}
+
+    }
+
+    @include tablets {
+        font-size: 12px;
+
+            .nav-item--oculto {
+                display: block;
+            }
+
+            & i {
+                display: inline-flex;
+            }
+
+        
+        #btnResponsive {
+            color: $blanco;
+            background-color: $blanco;
+        }
+
+        #btnResponsive:hover {
+            box-shadow: 0 0 2em 6px $colorHoverLink;
+        }
+
+        nav ul li:hover a {
+            background-image: linear-gradient(270deg, rgba(33,44,114,0.9) 0%, rgba(34,57,140,0.50) 40%, rgba(33, 70, 155, 0.10) 100%);  
+            border-right: 1px solid $blanco;
+            margin-right: -1px;
+            border-bottom: none;
+            margin-left: 30px;
+            transition: all .75s ease-in-out;
+        }
+
+    }
+	
+    .header__logo {
+        max-width: 5em;
+        min-width: 3em;
+        min-height: 3em;
+        margin: auto;
+        color: $blanco;
+        transition: all 1s ease-in-out;
+
+        img {
+            height: auto;
+        }
+
+        @include tablets {
+            max-width: 4em;
+            min-width: 2em;
+            min-height: 2em;
+        }
+    }
+    
+    .header__logo:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+
+
+

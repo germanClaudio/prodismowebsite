@@ -1,0 +1,325 @@
+@import "../variables";
+@import "../media_queries";
+
+/* ---------- Contenedor Index ----------*/
+
+.contenedor {
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-row-gap: 0.5em;
+	grid-column-gap: 0.7em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		'header			header   	header'
+		'destacado		destacado 	destacado'
+		'contenido		contenido 	aside'
+		'footer	 		footer 		footer';
+    justify-items: center;
+    
+    @include desktops {
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas:
+                'header			header   	header'
+                'destacado		destacado 	destacado'
+                'contenido		contenido 	contenido'
+                'aside          aside       aside'
+                'footer	 		footer 		footer';
+    }
+
+    /* ----------------- Hero Index ----------------*/
+    .hero {
+        grid-area: destacado;
+        background: $colorHero;
+        display: grid;
+        grid-template-columns: .5fr 1.5fr;
+        height: 100%;
+        width: 93%;
+
+        @include desktops {
+            font-size: 1rem;
+            grid-template-columns: 1fr;
+    
+                .hero__contenedor-video {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+    
+                .hero__contenedor-texto .hero__extracto {
+                    font-size: 1em; 
+                    line-height: 1rem; 
+                    font-weight: 300;
+                    margin-bottom: 1rem; 
+                    color: #868b8d;
+                }
+        }
+
+        @include tablets {
+            grid-template-columns: 1fr;
+
+            .hero__contenedor-video {
+                max-width: 100%;
+                max-height: 100%;
+                overflow: hidden;
+            }
+
+            .hero__contenedor .hero__extracto {
+                font-size: 1em; 
+                line-height: 1rem; 
+                margin-bottom: 0.8rem; 
+            }
+        }
+
+        .hero__contenedor-texto {
+            padding: 1.25em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: linear-gradient (to right bottom, #18263f, #1a2945, #1c2c4c, #1e2e52, #213159, #23335f, #263664, #29386a, #2b3b70, #2e3d77, #31407d, #344284);
+
+            .hero__fecha {
+                font-size: 1em;
+                color: #bbbbbb;
+                margin-bottom: 0.63em;
+            }
+            
+            .hero__titulo a {
+                margin-bottom: .5rem;
+                font-size: .75em;
+                color: $blanco;
+            }
+        
+            .hero__titulo::after {
+                content: '';
+                margin: 0.5em 0; 
+                display: block;
+                background-color: #868686;
+                width: 6em;
+                height: 1px;
+            }
+
+            .hero__extracto {
+                font-size: 1em; 
+                line-height: 1.75rem; 
+                font-weight: 400;
+                margin-bottom: 1.5rem; 
+                color: #dddddd;
+            }
+
+            .hero__subtitulo {
+                margin-bottom: .63rem;
+                font-size: 1.25em;
+                color: $blanco;
+                text-align: center;
+            }
+        }
+
+        .hero__contenedor-video {
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient (to right bottom, #18263f, #1a2945, #1c2c4c, #1e2e52, #213159, #23335f, #263664, #29386a, #2b3b70, #2e3d77, #31407d, #344284);
+            
+            .hero__videoResponsive {
+                max-width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+
+    /*---------- Contenido Index ----------*/
+    .contenido {
+        grid-area: contenido;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 90%;
+
+        @include desktops {
+            width: 95%;
+        }
+        
+        .card {
+            max-width: 100%;
+            @include desktops {
+                a img {
+                    padding: 0.5em;
+                    max-width: 400px;
+                }
+            }
+
+            @include tablets {
+                a img {
+                    padding: 1em;
+                    max-width: 300px;
+                }
+            }
+
+            @include phones {
+                a img {
+                padding: 0.5em;
+                max-width: 250px;
+                }
+            }
+
+            .card-header.card__backgroundColor {
+                background-image: $colorHeaderCard;
+                color: $blanco;
+            }
+
+            .cardBtnColor {
+                background-image: $colorBtnCard;
+                margin: 10px;
+                padding: 6px 45px;
+                text-align: center;
+                transition: all 0.9s ease;
+                background-size: 200% auto;
+                color: $blanco;            
+                box-shadow: 0 0 20px #3f51bb;
+                border-radius: 0.625em;
+                display: block;
+                cursor: pointer;
+            }
+            
+            .cardBtnColor:hover {
+                background-position: right center;
+                color: $blanco;
+                text-decoration: none;
+            }
+        }
+    }
+
+    /*---------- Sidebar Index ----------*/
+    .sidebar {
+        grid-area: aside;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1.5em; 
+        text-align: center;
+        min-height: 5.25em; 
+        background: $colorSidebar;
+        border-radius: 1em;
+        width: 85%;
+        margin-right: 3em;
+
+        @include largeDesktops {
+            .sidebar .sidebar__contenedor .sidebar__parrafo {
+                font-size: 12px;
+            }
+        }
+
+        @include desktops {
+            width: 85%;
+            margin-right: 0;
+
+			.sidebar__contenedor .sidebar__bio .sidebar__parrafo {
+				font-size: 1em;
+				padding: 1em auto;
+			}
+
+			.sidebar__menu {
+				padding: 1em auto;
+				margin-top: 3em;
+
+				.sidebar__menu-link {
+					font-size: 1.2em;
+				}
+			}
+        }
+        
+        @include tablets {
+            width: 80%;
+        }
+       
+        .sidebar__contenedor .sidebar__img-empresa {
+                border-radius: 100%;
+                max-height: 10em;
+                width: 10em; 
+                margin-bottom: 3rem;
+                transform: scale(1) translateY(0);
+                transition: all 0.75s ease-in-out;
+            }
+
+            .sidebar__img-empresa:hover {
+                transform: scale(1.4) translateY(-1.5em);
+                box-shadow: 0 0 2em $colorHoverLink;
+
+                @include largeDesktops {
+                    transform: scale(1.2) translateY(1.5em);
+                }
+
+                @include desktops {
+                    transform: scale(1.2) translateY(1.5em);
+                }
+
+                @include tablets {
+                    transform: scale(1.2) translateY(1.5em);
+                }
+            }
+        
+        .sidebar__contenedor .sidebar__bio {
+            margin-bottom: 1.5em; 
+            font-size: 1.25em; 
+            line-height: 1.5em;
+            color: #ddd;
+            
+            .sidebar__titulo {
+                font-size: 1.35em; 
+                line-height: 1.5em;
+                color: #eee; 
+            }
+
+            .sidebar__parrafo {
+                font-size: .85em; 
+                line-height: 1.5em;
+            }
+        }
+
+        .sidebar__menu {
+            max-width: 100%;
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            margin: 3em 0;
+            
+            .sidebar__menu-link {
+                padding: auto;
+                color: $blanco;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 400;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s ease all;
+                font-size: 1em;
+            }
+
+            .sidebar__menu-link:hover {
+                background: #eb6ee130;
+                color: $colorHoverLink;
+            }
+
+            .sidebar__menu-link i {
+                padding-top: 1.25em;
+                padding-bottom: 1.25em;
+                padding-right: 0.5em;
+                color: $blanco;
+            }
+
+            .sidebar__menu-link:hover i {
+                color: $colorHoverLink;
+            }
+
+        }
+
+    }
+}

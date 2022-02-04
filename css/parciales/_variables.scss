@@ -1,0 +1,37 @@
+$blanco: #ffffff;
+$negro: #000000;
+
+
+$background: ( 
+    /*$hoja: $fondo*/
+    index: linear-gradient(to right bottom, #ffffff, #f8f8f8, #f2f2f2, #ebebeb, #e5e5e5, #dedede, #d7d7d8, #d0d0d1, #c7c7c8, #bdbebf, #b4b5b6, #abacad),
+    productos: url("https://picsum.photos/id/1021/2000/1600/?blur=5"),
+    tecno: url("https://picsum.photos/id/668/2000/1600/?blur=9"),
+    clientes: url("https://picsum.photos/id/151/2000/1600/?blur=5"),
+    nosotros: url("https://picsum.photos/id/178/2000/1800/?blur=5"),
+    contacto: url("https://picsum.photos/id/115/2000/1600/?blur=5")
+);
+
+$colorHoverLink:  #eb6ee0;
+
+$colorHeader: linear-gradient(135deg, rgba(33,44,114,1) 0%, rgba(34,57,140,1) 40%, rgba(33,69,155,1) 100%); 
+
+$colorFooter: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(153,153,153,1) 20%, rgba(102,102,102,1) 75%); 
+
+$colorHero: linear-gradient(180deg, rgba(6,34,91,0.77) 0%, rgba(24,46,116,0.78) 24%, rgba(24,48,150,0.8) 69%);
+
+$colorSidebar: linear-gradient(150deg, rgba(6,28,71,1) 25%, rgba(24,46,116,1) 60%, rgba(56,80,156,1) 85%);
+
+$colorHeaderCard: linear-gradient(to right, #89253e  0%, #3a6186  100%);
+
+$colorBtnCard: linear-gradient(to right, #3a6186 0%, #89253e  61%, #3a6186  100%);
+
+$colorFondoContactForm: linear-gradient(0deg, #061c47, #6b204c,#213c92);
+
+$colorFondoWorkForm: linear-gradient(to right bottom, #6b204c, #692258, #642566, #5a2b73, #4b3281, #534490, #5b559f, #6567ad, #8d8ac1, #b3b0d6, #d9d7ea, #ffffff);
+
+$colorBtnAccordion: linear-gradient(to left, #89253e  0%, #3a6186  100%);
+
+$background404: linear-gradient(to right bottom, #ffffff, #f8f8f8, #f2f2f2, #ebebeb, #e5e5e5, #dedede, #d7d7d8, #d0d0d1, #c7c7c8, #bdbebf, #b4b5b6, #abacad);
+
+$colorBtn404: linear-gradient(to right, #25abe0 0%, #dedede  51%, #25abe0  100%)

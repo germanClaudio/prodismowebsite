@@ -1,0 +1,70 @@
+@import "../variables";
+@import "../media_queries";
+
+/* ---------- Contenedor Contacto ----------*/
+
+.contenedor__contacto {
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-row-gap: 0.5em;
+	grid-column-gap: 1.2em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		'header		header   	header'
+		'form		form		form'
+		'footer	 	footer 		footer';
+	align-items: center;
+	justify-content: center;
+	align-content: center;	
+
+    .contacto {
+        grid-area: form;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+        .itemsContacto--title {
+            font-size: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            
+            i {
+                margin-right: 1.5em;
+            }
+        }
+
+        .itemsContacto--title--redes {
+            font-size: 1.2em;
+            color: $negro;
+        }
+
+        .containerForm {
+            background: $colorFondoContactForm;
+            max-width: 35em;
+            height: 100%;
+            margin: 2em auto;
+            border-radius: 1em;
+        }
+        
+        .containerForm--work {
+            background-image: $colorFondoWorkForm;
+            max-width: 30em;
+            height: 100%;
+            margin: 2em auto;
+            border-radius: 1em;
+        }
+        
+        .accordion-button {
+            background-image: $colorBtnAccordion;
+            color: $blanco;
+        }    
+    }
+}
