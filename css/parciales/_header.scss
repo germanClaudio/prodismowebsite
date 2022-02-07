@@ -13,22 +13,25 @@
     z-index: 100;
 	width: 100%;
 
-    nav ul li:hover a {
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-image: linear-gradient(180deg, transparent 90%, $colorHoverLink 100%);
         border-bottom: 1px solid $blanco;
         margin-bottom: -1px;
     }
 
-    nav ul li ul {
-            background-image: linear-gradient(135deg, rgba(33,44,114,1) 0%, rgba(34,57,140,1) 40%, rgba(33,69,155,1) 100%);
-        
-        li {
-            background-image: transparent;
-            
-            a {
-                color: $blanco; 
-                border-bottom: none;
-            }
+    .navbar-nav .dropdown-menu {
+        background-image: linear-gradient(135deg, rgba(33,44,114,1) 0%, rgba(34,57,140,1) 40%, rgba(33,69,155,1) 100%);
+    
+        .dropdown-item {
+            color: $blanco;            
         }
+        .dropdown-item:hover {
+            background-color: transparent;
+            background-image: linear-gradient(45deg, transparent 50%, $colorHoverLink 100%);
+            color: $blanco;
+            border-bottom: 1px solid $blanco;
+            margin-bottom: -1px;            
+        }    
     }
 
     @include largeDesktops {
@@ -71,11 +74,25 @@
             box-shadow: 0 0 2em 6px $colorHoverLink;
         }
 
-        nav ul li:hover a {
+        .navbar-nav .dropdown-menu {
+            width: 16em;
+            margin: 0 auto;
+        }
+
+        .navbar-nav .dropdown-menu .dropdown-item:hover {
             border-bottom: none;
             margin-bottom: 0;
             border-right: 1px solid $blanco;
-            margin-left: 1px;
+            margin-right: -1px;
+            background-image: linear-gradient(45deg, transparent 40%, $colorHoverLink 100%);
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            border-bottom: none;
+            margin-bottom: 0;
+            border-right: 1px solid $blanco;
+            margin-right: -1px;
+            background-image: linear-gradient(45deg, transparent 40%, $colorHoverLink 100%);
         }
         
     }

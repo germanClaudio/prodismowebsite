@@ -21,17 +21,35 @@
 
     .footer__item {
         color: $blanco;
-        margin: auto 1.75em;
-        font-size: 1.2em;
+        margin: 2em;
+        font-size: 1.5em;
         transform: scale(1);
+        
         @include tablets {
             font-size: 1rem;
             margin: auto 1.25em;    
         }
+
+        i {
+            margin: 1em 0.5em;
+            transform: scale(1);
+            transition: all .85s ease-in-out;
+
+            @include phones {
+                font-size: 1.25rem;
+                margin: .5em;
+            }
+        }
     }
 
-    .footer__item:hover i {
-        color: $colorHoverLink;
+    .footer__item--copyR {
+        font-size: 1rem;
+    }
+
+
+    .footer__item:hover i { 
         transform: scale(1.6);
+        color: $colorHoverLink;
+       
     }
 }

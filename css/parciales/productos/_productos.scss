@@ -9,55 +9,119 @@
 	margin: 0 auto;
 	display: grid;
 	grid-row-gap: 0.5em;
-	grid-column-gap: 1.2em;
-	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 1em;
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, auto);
 	grid-template-areas:
-		'header				header   			header'
-		'main__productos	main__productos		main__productos'
-		'footer	 			footer 				footer';
+		'header             header'				
+		'main__productos    main__productos'
+		'footer             footer';
 	align-items: center;
-	justify-content: center;
 	align-content: center;
-    
 
+    @include desktops {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'header'
+            'main__productos'
+            'footer';
+    }
+    
     .productos {
         grid-area: main__productos;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
+        justify-content: center;
+        max-width: 75em;
+        margin: 0 auto;
 
-        .productos__titulo {
-            font-size: 1.5em;
-            margin: 1em 1.5em auto;
-        }
-
-        .productos__container {
+        .productos__generico {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-direction: column;
+            flex-wrap: nowarp;
+            justify-content: center;
+            align-items: center;
+            max-width: 95%;
 
-            .productos__imgContainer {
-                max-width: 15em;
-                max-height: 15rem;
-                margin: .5em;
-                border-radius: 5px;
-                transition: all .75s ease-in-out;
+            .productos__titulo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                margin: 1.5em 2em auto;
+                letter-spacing: 0.25em;
+                font-weight: 700;
+                color: $blanco;
+                text-align: center;
             }
 
-            .productos__imgContainer:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 20px #eb6ee0;
-            }
+            .productos__container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 3em auto;
 
-            .productos__video-virtual {
-                max-width: 100%;
-                margin: 1em auto;
+                .productos__imgContainer {
+                    max-width: 15em;
+                    max-height: 15rem;
+                    margin: 3em;
+                    border-radius: 0.5rem;
+                    box-shadow: 10px 10px 15px 10px #061c47;
+                    transition: all .75s ease-in-out;
+                }
+
+                .productos__imgContainer:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 15px 5px #eb6ee0;
+                }
             }
+           
         }
-    
-    }
 
-}
+        .productos__virtual {
+            background-color: #8686866b;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowarp;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-height: 90%;
+            margin: 1em;
+
+            .productos__titulo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                margin: 1.5em 2em auto;
+                letter-spacing: 0.25em;
+                font-weight: 700;
+                color: $blanco;
+                text-align: center;
+            }
+
+            .productos__container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 3em auto;
+                width: 90%;
+
+                .productos__video-virtual {
+                    height: 100%;
+                    width: 100%;
+                    margin: 1em auto;
+                }
+            }
+
+        }
+    }
+}    
