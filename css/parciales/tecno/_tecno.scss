@@ -25,94 +25,107 @@
 		max-height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
 	
 
-	.tecno__hard {
-		max-width: 100%;
-		min-height: 100%;
-		display: flex;
-		flex-direction:column;
-		align-items: center;
-		justify-content: space-around;
-		margin-top: 0.5em;
-		margin-bottom: 4em;
-		margin-left: auto;
-		margin-right: auto;
-		
-		.tecno__tituloHard {
-			font-size: 2.5em;
-			letter-spacing: 0.5rem;
-			margin: 1em auto;
-			text-align: center;
-			font-weight: 700;
-			color: #00008b;
-			
-		}
-
-		.tecno__tituloSoft {
-			@extend .tecno__tituloHard;
-			margin-top: 2em;
-		}
-
-		.tecno__contenedorImg {
-			max-width: 75%;
-			height: 100%;
+		.tecno__hard {
+			width: 100%;
+			min-height: 100%;
 			display: flex;
-			flex-flow: row wrap;
-			margin: 1.75em;
-			justify-content: space-around;
+			flex-direction:column;
+			align-items: center;
+			margin: 0.5em 3em auto auto;
 			
-			.tecno__img {
-				border-radius: 50%;
-				border: 5px solid #aa155a;
-				width: 10em;
-				height: 10em;
-				margin: 2.5em;
-				transition: all 0.8s ease-in-out;
+			.tecno__tituloHard {
+				font-size: 2.5em;
+				letter-spacing: 0.5rem;
+				margin: 1em auto;
+				text-align: center;
+				font-weight: 700;
+				color: #00008b;
+				
+			}
 
-				@include desktops {
-					width: 15em;
-					height: 15em;
+			.tecno__contenedorImg {
+				max-width: 75%;
+				min-height: 100%;
+				display: flex;
+				flex-flow: row wrap;
+				margin: 1.75em;
+				justify-content: space-around;
+				align-items: center;
+				
+				.tecno__img {
+					border-radius: 50%;
+					border: 5px solid #aa155a;
+					width: 10em;
+					height: 10em;
+					margin: 2.5em;
 					transition: all 0.8s ease-in-out;
+
+					@include desktops {
+						width: 15em;
+						height: 15em;
+						transition: all 0.8s ease-in-out;
+					}
+				}
+
+				.tecno__img:hover {
+					min-width: 10em;
+					min-height: 10em;
+					box-shadow: 0 0 15px $colorHoverLink;
+					border: none;
+					transform: rotate(360deg) scale(1.25);
+				}
+
+				.tecno__img--modal {
+					max-width: 8em;
+					max-height: 8em;
+				}
+
+				.modal__backgroundColor {
+					background-image: $colorHeaderCard;
+					color: $blanco;
+				}
+
+				.modalBtnColor {
+					color: $blanco;
+					background-image: $colorBtnCard;
+					text-align: center;
+					transition: all 0.9s ease;
+					background-size: 200% auto;
+					box-shadow: 0 0 20px #3f51bb;
+					border-radius: 0.5em;
+					width: 7.5em;
+				}
+				
+				.modalBtnColor:hover {
+					background-position: right center;
+					color: $blanco;
+					text-decoration: none;
 				}
 			}
+		}
 
-			.tecno__img:hover {
-				min-width: 10em;
-				min-height: 10em;
-				box-shadow: 0 0 15px $colorHoverLink;
-				border: none;
-				transform: rotate(360deg) scale(1.25);
+		.tecno__soft {
+			width: 100%;
+			min-height: 100%;
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			margin: 0.5em 3em auto auto;
+			background-color: #0e2bd128;
+
+			.tecno__tituloSoft {
+				font-size: 2.5em;
+				letter-spacing: 0.5rem;
+				margin: 1em auto;
+				margin-top: 2em;
+				text-align: center;
+				font-weight: 700;
+				color: #00008b;
+				
 			}
-
-			.tecno__img--modal {
-				max-width: 8em;
-				max-height: 8em;
-			}
-
-			.modal__backgroundColor {
-                background-image: $colorHeaderCard;
-                color: $blanco;
-            }
-
-			.modalBtnColor {
-                color: $blanco;
-                background-image: $colorBtnCard;
-                text-align: center;
-                transition: all 0.9s ease;
-				background-size: 200% auto;
-				box-shadow: 0 0 20px #3f51bb;
-                border-radius: 0.5em;
-				width: 7.5em;
-			}
-            
-            .modalBtnColor:hover {
-                background-position: right center;
-                color: $blanco;
-                text-decoration: none;
-            }
 		}
 	}
-}
 }
