@@ -10,13 +10,11 @@
   padding: 0px 1.875em;
   background-image: $background404;
 
-
     .wrapper {
     max-width: 60em;
     width: 100%; 
     margin: 1.875em auto;
     transform: scale(0.8);
-    
 
         .landing-page {
         max-width: 60em;
@@ -29,7 +27,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
 
             .body__404--titulo {
             font-size:3.5em;

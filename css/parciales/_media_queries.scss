@@ -1,29 +1,28 @@
 /*---------- @MEDIA-QUERIES ----------*/
 
-/* Extra large devices (large desktops, 1200px and up) */
-@mixin largeDesktops {
+@mixin largeDesktops { /* Extra large devices (large desktops, 1200px and up) */
     @media screen and (max-width: 1200px) { 
         @content;
     }
 }
 
 
-/* Large devices (desktops, 992px and up) */
-@mixin desktops {
+
+@mixin desktops { /* Large devices (desktops, 992px and up) */
     @media screen and (max-width: 992px) { 
         @content;
     }
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@mixin tablets {
+
+@mixin tablets { /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
     @media screen and (max-width: 768px) { 
         @content;
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@mixin phones {
+
+@mixin phones { /* Small devices (landscape phones, 576px and up) */
     @media screen and (max-width: 576px) {   
         @content
     }

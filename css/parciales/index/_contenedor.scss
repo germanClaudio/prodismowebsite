@@ -1,8 +1,6 @@
 @import "../variables";
 @import "../media_queries";
 
-/* ---------- Contenedor Index ----------*/
-
 .contenedor {
 	max-width: 100%;
 	height: 100%;
@@ -29,7 +27,6 @@
                 'footer	 		footer 		footer';
     }
 
-    /* ----------------- Hero Index ----------------*/
     .hero {
         grid-area: destacado;
         background: $colorHero;
@@ -129,7 +126,7 @@
         }
     }
 
-    /*---------- Contenido Index ----------*/
+
     .contenido {
         grid-area: contenido;
         display: flex;
@@ -192,7 +189,7 @@
         }
     }
 
-    /*---------- Sidebar Index ----------*/
+
     .sidebar {
         grid-area: aside;
         display: flex;

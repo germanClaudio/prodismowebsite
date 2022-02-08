@@ -23,10 +23,6 @@ body {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
 body {
   font-family: 'Nokora', sans-serif;
   font-weight: 300;
@@ -75,24 +71,28 @@ li {
   list-style: none;
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
 @media screen and (max-width: 1200px) {
   body {
     font-size: 17px;
   }
 }
 
+/* Large devices (desktops, 992px and up) */
 @media screen and (max-width: 992px) {
   body {
     font-size: 14px;
   }
 }
 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media screen and (max-width: 768px) {
   body {
     font-size: 13px;
   }
 }
 
+/* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
   body {
     font-size: 12px;
@@ -100,11 +100,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/* ---------- HEADER ----------*/
 .header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -121,6 +116,9 @@ li {
   left: 0;
   z-index: 100;
   width: 100%;
+  /* Extra large devices (large desktops, 1200px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 .header .navbar-light .navbar-nav .nav-link:hover {
@@ -214,6 +212,7 @@ li {
   color: #ffffff;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 .header .header__logo img {
@@ -234,11 +233,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/* ---------- Contenedor Index ----------*/
 .contenedor {
   max-width: 100%;
   height: 100%;
@@ -253,9 +247,7 @@ li {
       grid-template-rows: repeat(4, auto);
       grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	aside' 'footer	 		footer 		footer';
   justify-items: center;
-  /* ----------------- Hero Index ----------------*/
-  /*---------- Contenido Index ----------*/
-  /*---------- Sidebar Index ----------*/
+  /* Large devices (desktops, 992px and up) */
 }
 
 @media screen and (max-width: 992px) {
@@ -279,6 +271,8 @@ li {
       grid-template-columns: .5fr 1.5fr;
   height: 100%;
   width: 93%;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 @media screen and (max-width: 992px) {
@@ -402,6 +396,7 @@ li {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
+  /* Large devices (desktops, 992px and up) */
 }
 
 @media screen and (max-width: 992px) {
@@ -412,6 +407,9 @@ li {
 
 .contenedor .contenido .card {
   max-width: 100%;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
 }
 
 @media screen and (max-width: 992px) {
@@ -484,6 +482,9 @@ li {
   border-radius: 1em;
   width: 85%;
   margin-right: 3em;
+  /* Extra large devices (large desktops, 1200px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 @media screen and (max-width: 1200px) {
@@ -532,6 +533,9 @@ li {
           transform: scale(1.4) translateY(-1.5em);
   -webkit-box-shadow: 0 0 2em #eb6ee0;
           box-shadow: 0 0 2em #eb6ee0;
+  /* Extra large devices (large desktops, 1200px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 @media screen and (max-width: 1200px) {
@@ -630,10 +634,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
 .contenedor__productos {
   max-width: 100%;
   height: 100%;
@@ -652,6 +652,7 @@ li {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  /* Large devices (desktops, 992px and up) */
 }
 
 @media screen and (max-width: 992px) {
@@ -673,6 +674,8 @@ li {
   grid-area: main__productos;
   width: 90%;
   margin: 0 auto;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
 }
 
 @media screen and (max-width: 768px) {
@@ -696,6 +699,8 @@ li {
   padding: 1em;
   grid-gap: 0.85em;
   margin-bottom: 4.5em;
+  /* Large devices (desktops, 992px and up) */
+  /* Small devices (landscape phones, 576px and up) */
 }
 
 @media screen and (max-width: 992px) {
@@ -919,11 +924,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/* ---------- Contenedor Tecnologia -----------*/
 .contenedor__tecno {
   max-width: 100%;
   height: 100%;
@@ -1016,6 +1016,7 @@ li {
   margin: 2.5em;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
+  /* Large devices (desktops, 992px and up) */
 }
 
 @media screen and (max-width: 992px) {
@@ -1096,11 +1097,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/* ---------- Contenedor Clientes -----------*/
 .contenedor__clientes {
   max-width: 100%;
   height: 100%;
@@ -1192,11 +1188,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/* ---------- Contenedor Nosotros -----------*/
 .contenedor__nos {
   max-width: 100%;
   height: 100%;
@@ -1288,11 +1279,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/* ---------- Contenedor Contacto ----------*/
 .contenedor__contacto {
   max-width: 100%;
   height: 100%;
@@ -1386,11 +1372,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
-/*---------- FOOTER ----------*/
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -1413,6 +1394,7 @@ li {
 
 .footer .footer__titulo {
   color: #ffffff;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 @media screen and (max-width: 768px) {
@@ -1427,6 +1409,7 @@ li {
   font-size: 1.5em;
   -webkit-transform: scale(1);
           transform: scale(1);
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 }
 
 @media screen and (max-width: 768px) {
@@ -1442,6 +1425,7 @@ li {
           transform: scale(1);
   -webkit-transition: all .85s ease-in-out;
   transition: all .85s ease-in-out;
+  /* Small devices (landscape phones, 576px and up) */
 }
 
 @media screen and (max-width: 576px) {
@@ -1462,10 +1446,6 @@ li {
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
-/* Extra large devices (large desktops, 1200px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Small devices (landscape phones, 576px and up) */
 .body__404 {
   display: -webkit-box;
   display: -ms-flexbox;
