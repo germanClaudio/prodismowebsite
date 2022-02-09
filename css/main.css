@@ -462,6 +462,18 @@ li {
   text-decoration: none;
 }
 
+.contenedor .contenido .card .img-fluid {
+  border-radius: .75em;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.contenedor .contenido .card .img-fluid:hover {
+  background-image: radial-gradient(transparent 88%, #eb6ee0 93%, transparent 100%);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .contenedor .sidebar {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -480,7 +492,7 @@ li {
   min-height: 5.25em;
   background: linear-gradient(150deg, #061c47 25%, #182e74 60%, #38509c 85%);
   border-radius: 1em;
-  width: 85%;
+  width: 90%;
   margin-right: 3em;
   /* Extra large devices (large desktops, 1200px and up) */
   /* Large devices (desktops, 992px and up) */
@@ -495,7 +507,7 @@ li {
 
 @media screen and (max-width: 992px) {
   .contenedor .sidebar {
-    width: 85%;
+    width: 95%;
     margin-right: 0;
   }
   .contenedor .sidebar .sidebar__contenedor .sidebar__bio .sidebar__parrafo {
@@ -521,7 +533,7 @@ li {
   border-radius: 100%;
   max-height: 10em;
   width: 10em;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   -webkit-transform: scale(1) translateY(0);
           transform: scale(1) translateY(0);
   -webkit-transition: all 0.75s ease-in-out;
@@ -529,8 +541,8 @@ li {
 }
 
 .contenedor .sidebar .sidebar__img-empresa:hover {
-  -webkit-transform: scale(1.4) translateY(-1.5em);
-          transform: scale(1.4) translateY(-1.5em);
+  -webkit-transform: scale(1.4) translateY(-1.25em);
+          transform: scale(1.4) translateY(-1.25em);
   -webkit-box-shadow: 0 0 2em #eb6ee0;
           box-shadow: 0 0 2em #eb6ee0;
   /* Extra large devices (large desktops, 1200px and up) */
@@ -570,11 +582,13 @@ li {
   font-size: 1.35em;
   line-height: 1.5em;
   color: #eee;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .contenedor .sidebar .sidebar__contenedor .sidebar__bio .sidebar__parrafo {
   font-size: .85em;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 .contenedor .sidebar .sidebar__menu {
@@ -615,6 +629,7 @@ li {
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   font-size: 1em;
+  margin: 1.25em auto;
 }
 
 .contenedor .sidebar .sidebar__menu .sidebar__menu-link:hover {
