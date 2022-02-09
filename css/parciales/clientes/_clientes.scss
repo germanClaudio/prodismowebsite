@@ -43,15 +43,16 @@
             }
 
             .clientes__titulo--partners {
-                margin: 1.5em auto;
+                margin: 2em 0.5em auto;
                 color: #ffffff;
             }
 
             .clientes__imgContainer {
-                max-width: 10em;
-                max-height: 10rem;
+                width: 16em;
+                height: 14rem;
                 margin: 2em;
                 border-radius: 5px;
+                object-fit: cover;
                 
             }
 

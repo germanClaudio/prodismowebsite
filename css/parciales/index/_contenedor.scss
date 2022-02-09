@@ -188,12 +188,17 @@
             }
 
             .img-fluid {
+                max-width: 17em;
+                max-height: 17em;
+                box-shadow: 6px 6px 8px 1px #444;
                 border-radius: .75em;
-                transition: all .6s ease-in-out;
+                margin: 1em;
+                transition: all .5s ease-in-out;
             }
+
             .img-fluid:hover {
-                background-image: radial-gradient(transparent 88%, $colorHoverLink 93%, transparent 100%);
-                transform: scale(1.01);
+                box-shadow: 0px 0px 6px 1px #444;
+                transform: scale(1.025);
             }
         }
     }

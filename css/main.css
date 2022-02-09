@@ -463,15 +463,21 @@ li {
 }
 
 .contenedor .contenido .card .img-fluid {
+  max-width: 17em;
+  max-height: 17em;
+  -webkit-box-shadow: 6px 6px 8px 1px #444;
+          box-shadow: 6px 6px 8px 1px #444;
   border-radius: .75em;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  margin: 1em;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .contenedor .contenido .card .img-fluid:hover {
-  background-image: radial-gradient(transparent 88%, #eb6ee0 93%, transparent 100%);
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-box-shadow: 0px 0px 6px 1px #444;
+          box-shadow: 0px 0px 6px 1px #444;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .contenedor .sidebar {
@@ -1184,15 +1190,17 @@ li {
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__titulo--partners {
-  margin: 1.5em auto;
+  margin: 2em 0.5em auto;
   color: #ffffff;
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__imgContainer {
-  max-width: 10em;
-  max-height: 10rem;
+  width: 16em;
+  height: 14rem;
   margin: 2em;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__imgContainer:hover {
