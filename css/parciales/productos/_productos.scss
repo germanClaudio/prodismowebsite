@@ -140,7 +140,7 @@
                     @extend .galeria__titulo;
                     font-size: 1.5em;
                     text-transform: uppercase;
-                    background: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(19, 4, 236, 1));
+                    background: linear-gradient(270deg, rgba(255, 255, 255, 0), rgb(12, 2, 155));
                 }
             }
 
@@ -183,8 +183,9 @@
             }
 
             .galeria__img:hover {
-                transform: scale(1.025);
+                transform: scale(1.01);
                 box-shadow: 0 0 5px 5px $colorHoverLink;
+                
             }
 
 

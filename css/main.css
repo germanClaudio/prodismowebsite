@@ -449,8 +449,8 @@ li {
   transition: all 0.9s ease;
   background-size: 200% auto;
   color: #ffffff;
-  -webkit-box-shadow: 0 0 20px #3f51bb;
-          box-shadow: 0 0 20px #3f51bb;
+  -webkit-box-shadow: 6px 6px 10px 1px #3f51bb;
+          box-shadow: 6px 6px 10px 1px #3f51bb;
   border-radius: 0.625em;
   display: block;
   cursor: pointer;
@@ -474,8 +474,8 @@ li {
 }
 
 .contenedor .contenido .card .img-fluid:hover {
-  -webkit-box-shadow: 0px 0px 6px 1px #444;
-          box-shadow: 0px 0px 6px 1px #444;
+  -webkit-box-shadow: -6px -6px 8px 1px #444;
+          box-shadow: -6px -6px 8px 1px #444;
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
 }
@@ -821,8 +821,8 @@ li {
 .contenedor__productos .productos .galeria__item .galeria__titulo--main {
   font-size: 1.5em;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#1304ec));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0), #1304ec);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#0c029b));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0), #0c029b);
 }
 
 .contenedor__productos .productos .galeria__item:nth-child(1) {
@@ -872,8 +872,8 @@ li {
 }
 
 .contenedor__productos .productos .galeria__img:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-box-shadow: 0 0 5px 5px #eb6ee0;
           box-shadow: 0 0 5px 5px #eb6ee0;
 }
@@ -1115,6 +1115,21 @@ li {
   text-align: center;
   font-weight: 700;
   color: #00008b;
+}
+
+.contenedor__tecno .tecno .tecno__soft video {
+  width: 100%;
+}
+
+.contenedor__tecno .tecno .tecno__soft .carousel-item .carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.contenedor__tecno .tecno .tecno__soft .container-md .carousel-indicators {
+  bottom: -30px;
 }
 
 /*---------- @MEDIA-QUERIES ----------*/

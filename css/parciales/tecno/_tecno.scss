@@ -124,6 +124,21 @@
 				color: #00008b;
 				
 			}
+
+			video {
+				width: 100%;
+			}
+			
+			.carousel-item .carousel-caption {
+				position: relative;
+				left: auto;
+				right: auto;
+				bottom: auto;
+			}
+
+			.container-md .carousel-indicators {
+				bottom: -30px;
+			}
 		}
 	}
 }
