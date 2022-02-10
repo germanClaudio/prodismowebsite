@@ -22,6 +22,8 @@
     <!-- Aca van los scripts -->
     <script src="https://kit.fontawesome.com/618299664c.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.scrollUp.js"></script>
 </head>
 
 <body>
@@ -694,7 +696,8 @@
                                             <div class="carousel-caption-description">
                                                 <p>A los ya mencionados software Process Simulate y NX, se suma el VCx.
                                                     Agregamos en un entorno virtual, además de todo lo ya
-                                                    desarrollado (Diseños y Simulaciones), las programaciones off-line de
+                                                    desarrollado (Diseños y Simulaciones), las programaciones off-line
+                                                    de
                                                     PLCs, HMIs y OLP Robots, y con esto combinado realizamos la puesta
                                                     en marcha VIRTUAL de la instalación completa que estamos diseñando
                                                     y/o desarrollando. Esta prueba temprana, nos permite detectar y
@@ -771,6 +774,12 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        $(function () {
+            $.scrollUp();
+        });
     </script>
 
 </body>
