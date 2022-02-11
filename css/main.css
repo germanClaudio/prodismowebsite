@@ -105,7 +105,7 @@ li {
 #scrollUp {
   border-radius: 50%;
   bottom: 8em;
-  right: 2em;
+  right: 1.8em;
   width: 4em;
   height: 4em;
   background: url("/src/multimedia/images/upArrow.jpg");
@@ -118,7 +118,7 @@ li {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
-  padding: 0.5em;
+  padding: 0.6em 1.5em;
   background: linear-gradient(135deg, #212c72 0%, #22398c 40%, #21459b 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +132,11 @@ li {
   /* Extra large devices (large desktops, 1200px and up) */
   /* Large devices (desktops, 992px and up) */
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+}
+
+.header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header .navbar-light .navbar-nav .nav-link:hover {
@@ -192,10 +197,13 @@ li {
   .header #btnResponsive {
     color: #ffffff;
     background-color: #ffffff;
+    -webkit-box-shadow: 2px 2px 4px 1px #444;
+            box-shadow: 2px 2px 4px 1px #444;
+    margin-right: 0.5em;
   }
   .header #btnResponsive:hover {
-    -webkit-box-shadow: 0 0 2em 6px #eb6ee1bd;
-            box-shadow: 0 0 2em 6px #eb6ee1bd;
+    -webkit-box-shadow: 0 0 10px 2px #eb6ee1bd;
+            box-shadow: 0 0 10px 2px #eb6ee1bd;
   }
   .header .navbar-nav .dropdown-menu {
     width: 16em;
@@ -218,9 +226,9 @@ li {
 }
 
 .header .header__logo {
-  max-width: 5em;
-  min-width: 3em;
-  min-height: 3em;
+  max-width: 4em;
+  min-width: 2.6em;
+  min-height: 2.6em;
   margin: auto;
   color: #ffffff;
   -webkit-transition: all 1s ease-in-out;
@@ -234,9 +242,9 @@ li {
 
 @media screen and (max-width: 768px) {
   .header .header__logo {
-    max-width: 4em;
-    min-width: 2em;
-    min-height: 2em;
+    max-width: 3em;
+    min-width: 1.8em;
+    min-height: 1.8em;
   }
 }
 
@@ -602,12 +610,13 @@ li {
   line-height: 1.5em;
   color: #eee;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .contenedor .sidebar .sidebar__contenedor .sidebar__bio .sidebar__parrafo {
   font-size: .85em;
   line-height: 2em;
+  margin-bottom: 2em;
 }
 
 .contenedor .sidebar .sidebar__menu {
@@ -729,7 +738,7 @@ li {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 14em;
+  grid-auto-rows: 16em;
   padding: 1em;
   grid-gap: 1em;
   margin-bottom: 14em;
@@ -741,7 +750,7 @@ li {
   .contenedor__productos .productos .galeria-container {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 12em;
+    grid-auto-rows: 14em;
     grid-gap: 0.85em;
   }
   .contenedor__productos .productos .galeria-container .galeria__item:nth-child(1) {
@@ -782,7 +791,7 @@ li {
   .contenedor__productos .productos .galeria-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 10em;
+    grid-auto-rows: 12em;
     grid-gap: 0.6em;
   }
   .contenedor__productos .productos .galeria-container .galeria__item:nth-child(1) {
@@ -1393,11 +1402,12 @@ li {
 }
 
 .contenedor__contacto .contacto .itemsContacto--title i {
-  margin-right: 1.5em;
+  margin-right: 1.25em;
+  font-size: 1.25em;
 }
 
 .contenedor__contacto .contacto .itemsContacto--title--redes {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #000000;
 }
 

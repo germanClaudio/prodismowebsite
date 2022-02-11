@@ -3,7 +3,7 @@
 
 .header {
 	grid-area: header;
-	padding: 0.5em;
+	padding: 0.6em 1.5em;
 	background: $colorHeader;
 	display: flex;
 	position: sticky;
@@ -11,6 +11,11 @@
     left: 0;
     z-index: 100;
 	width: 100%;
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     .navbar-light .navbar-nav .nav-link:hover {
         background-image: linear-gradient(180deg, transparent 90%, $colorHoverLink 100%);
@@ -52,7 +57,6 @@
 		.nav-item--oculto {
 				display: none;
 		}
-
     }
 
     @include tablets {
@@ -69,10 +73,12 @@
         #btnResponsive {
             color: $blanco;
             background-color: $blanco;
+            box-shadow: 2px 2px 4px 1px #444;
+            margin-right: 0.5em;
         }
 
         #btnResponsive:hover {
-            box-shadow: 0 0 2em 6px $colorHoverLink;
+            box-shadow: 0 0 10px 2px $colorHoverLink;
         }
 
         .navbar-nav .dropdown-menu {
@@ -95,13 +101,12 @@
             margin-right: -1px;
             background-image: linear-gradient(45deg, transparent 40%, $colorHoverLink 100%);
         }
-        
     }
 	
     .header__logo {
-        max-width: 5em;
-        min-width: 3em;
-        min-height: 3em;
+        max-width: 4em;
+        min-width: 2.6em;
+        min-height: 2.6em;
         margin: auto;
         color: $blanco;
         transition: all 1s ease-in-out;
@@ -111,14 +116,13 @@
         }
 
         @include tablets {
-            max-width: 4em;
-            min-width: 2em;
-            min-height: 2em;
+            max-width: 3em;
+            min-width: 1.8em;
+            min-height: 1.8em;
         }
     }
     
     .header__logo:hover {
         transform: scale(1.2);
     }
-
 }
