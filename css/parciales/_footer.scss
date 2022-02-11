@@ -11,38 +11,65 @@
 	flex-flow: row wrap;
     width: 100%;
 
-    .footer__titulo {
-        color: $blanco;
-        @include tablets {
-            font-size: .85rem;
-        }
-    }
-
     .footer__item {
         color: $blanco;
-        margin: 2em;
+        margin: 1.5em .5em;
         font-size: 1.5em;
         transform: scale(1);
         
-        @include tablets {
-            font-size: 1rem;
-            margin: auto 1.25em;    
-        }
-
         i {
-            margin: 1em 0.5em;
+            margin: 2em 1em;
             transform: scale(1);
             transition: all .85s ease-in-out;
 
+            @include desktops {
+                font-size: 1rem;
+                margin: 2em auto;
+            }
+
+            @include tablets {
+                font-size: 1rem;
+                margin: 2em .25em;
+            }
+
             @include phones {
-                font-size: 1.25rem;
-                margin: .5em;
+                font-size: 0.85rem;
+                margin: 2em .1em;
             }
         }
     }
 
     .footer__item--copyR {
         font-size: 1rem;
+        margin: 2em auto;
+
+        @include tablets {
+            font-size: 0.95em;
+            margin: 1.75em auto;
+        }
+
+        @include phones {
+            font-size: 0.85em;
+            margin: 1.75em auto;
+        }
+
+    }
+
+    .footer__item--medio {
+        font-size: .8rem;
+        margin: 1em auto;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    .footer__logo {
+        max-width: 6em;
+        width: 6em;
+        height: 6em;
+        margin: 2em auto;
+        object-fit: contain;
     }
 
 

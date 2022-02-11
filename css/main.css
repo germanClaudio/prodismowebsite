@@ -104,7 +104,7 @@ li {
 
 #scrollUp {
   border-radius: 50%;
-  bottom: 8em;
+  bottom: 10em;
   right: 1.8em;
   width: 4em;
   height: 4em;
@@ -144,6 +144,14 @@ li {
   background-image: linear-gradient(180deg, transparent 90%, #eb6ee1bd 100%);
   border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
+}
+
+.header .navbar-light .navbar-nav .nav-link:hover i {
+  color: #eb6ee1bd;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header .navbar-nav .dropdown-menu {
@@ -1441,8 +1449,8 @@ li {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(20%, #999999), color-stop(75%, #666666));
-  background: linear-gradient(90deg, #222222 0%, #999999 20%, #666666 75%);
+  background: -webkit-gradient(linear, left top, right top, from(#222222), color-stop(20%, #363636), color-stop(75%, #242424));
+  background: linear-gradient(90deg, #222222 0%, #363636 20%, #242424 75%);
   color: #ffffff;
   font-size: .85em;
   padding: .5em;
@@ -1456,51 +1464,86 @@ li {
   width: 100%;
 }
 
-.footer .footer__titulo {
-  color: #ffffff;
-  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-}
-
-@media screen and (max-width: 768px) {
-  .footer .footer__titulo {
-    font-size: .85rem;
-  }
-}
-
 .footer .footer__item {
   color: #ffffff;
-  margin: 2em;
+  margin: 1.5em .5em;
   font-size: 1.5em;
   -webkit-transform: scale(1);
           transform: scale(1);
-  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-}
-
-@media screen and (max-width: 768px) {
-  .footer .footer__item {
-    font-size: 1rem;
-    margin: auto 1.25em;
-  }
 }
 
 .footer .footer__item i {
-  margin: 1em 0.5em;
+  margin: 2em 1em;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all .85s ease-in-out;
   transition: all .85s ease-in-out;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 992px) {
+  .footer .footer__item i {
+    font-size: 1rem;
+    margin: 2em auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__item i {
+    font-size: 1rem;
+    margin: 2em .25em;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .footer .footer__item i {
-    font-size: 1.25rem;
-    margin: .5em;
+    font-size: 0.85rem;
+    margin: 2em .1em;
   }
 }
 
 .footer .footer__item--copyR {
   font-size: 1rem;
+  margin: 2em auto;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__item--copyR {
+    font-size: 0.95em;
+    margin: 1.75em auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .footer__item--copyR {
+    font-size: 0.85em;
+    margin: 1.75em auto;
+  }
+}
+
+.footer .footer__item--medio {
+  font-size: .8rem;
+  margin: 1em auto;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__item--medio {
+    display: none;
+  }
+}
+
+.footer .footer__logo {
+  max-width: 6em;
+  width: 6em;
+  height: 6em;
+  margin: 2em auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer .footer__item:hover i {
