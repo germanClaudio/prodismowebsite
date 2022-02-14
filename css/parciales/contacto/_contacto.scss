@@ -60,10 +60,20 @@
             margin: 2em auto;
             border-radius: 1em;
         }
+
+        .accordion-item {
+            margin-bottom: 1em;
+            border: 1px solid $blanco;
+        }
         
         .accordion-button {
             background-image: $colorBtnAccordion;
             color: $blanco;
-        }    
+
+            i {
+                margin-right: 1em;
+            }  
+        }
+
     }
 }
