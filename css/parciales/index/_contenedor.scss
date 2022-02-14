@@ -202,7 +202,7 @@
                 transition: all 0.9s ease;
                 background-size: 200% auto;
                 color: $blanco;            
-                box-shadow: 6px 6px 10px 1px #3f51bb;
+                box-shadow: 6px 6px 10px 1px #2f3241e3;
                 border-radius: 0.625em;
                 display: block;
                 cursor: pointer;
@@ -212,6 +212,7 @@
                 background-position: right center;
                 color: $blanco;
                 text-decoration: none;
+                box-shadow: -4px -4px 8px 1px #2f324194;
             }
 
             .img-fluid {

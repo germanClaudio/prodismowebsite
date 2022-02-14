@@ -38,8 +38,11 @@
             margin: 2em auto;
                         
             .clientes__titulo--principales {
-                margin: 1em auto 1.2em;
+                margin: 1em auto;
 
+                @include phones {
+                    margin: 1em auto .5em;
+                }
             }
 
             .clientes__titulo--partners {
