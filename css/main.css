@@ -207,7 +207,7 @@ li {
     background-color: #ffffff;
     -webkit-box-shadow: 2px 2px 4px 1px #444;
             box-shadow: 2px 2px 4px 1px #444;
-    margin-right: 0.5em;
+    margin-right: 0.2em;
   }
   .header #btnResponsive:hover {
     -webkit-box-shadow: 0 0 10px 2px #eb6ee1bd;
@@ -401,11 +401,56 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: linear-gradient to right bottom, #18263f, #1a2945, #1c2c4c, #1e2e52, #213159, #23335f, #263664, #29386a, #2b3b70, #2e3d77, #31407d, #344284;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .hero .hero__contenedor-video {
+    min-height: 25em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor .hero .hero__contenedor-video {
+    min-height: 20em;
+  }
 }
 
 .contenedor .hero .hero__contenedor-video .hero__videoResponsive {
+  /*max-width: 100%;
+                min-height: 100%;*/
   max-width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
   min-height: 100%;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor .hero .hero__contenedor-video .hero__videoResponsive {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .hero .hero__contenedor-video .hero__videoResponsive {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor .hero .hero__contenedor-video .hero__videoResponsive {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 100%;
+  }
 }
 
 .contenedor .contenido {
@@ -691,7 +736,7 @@ li {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  grid-row-gap: 0.5em;
+  grid-row-gap: 0;
   grid-column-gap: 1em;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
@@ -723,7 +768,7 @@ li {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main__productos;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   /* Small devices (landscape phones, 576px and up) */
@@ -731,7 +776,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .contenedor__productos .productos {
-    width: 95%;
+    width: 96%;
   }
 }
 
@@ -747,9 +792,10 @@ li {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 16em;
-  padding: 1em;
+  padding: 2em 5em;
   grid-gap: 1em;
   margin-bottom: 14em;
+  background-color: #c0c0c03a;
   /* Large devices (desktops, 992px and up) */
   /* Small devices (landscape phones, 576px and up) */
 }
@@ -759,7 +805,7 @@ li {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 14em;
-    grid-gap: 0.85em;
+    grid-gap: 1em;
   }
   .contenedor__productos .productos .galeria-container .galeria__item:nth-child(1) {
     -ms-grid-column: span 3;
@@ -801,6 +847,7 @@ li {
         grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 12em;
     grid-gap: 0.6em;
+    padding: 2em .25em;
   }
   .contenedor__productos .productos .galeria-container .galeria__item:nth-child(1) {
     -ms-grid-column: span 2;
@@ -832,6 +879,18 @@ li {
   }
 }
 
+.contenedor__productos .productos .galeria-container.estampado {
+  background-color: #a0a0a085;
+}
+
+.contenedor__productos .productos .galeria-container.ensamble {
+  background-color: #70707085;
+}
+
+.contenedor__productos .productos .galeria-container.moldes {
+  background-color: #20202085;
+}
+
 .contenedor__productos .productos .galeria__item {
   position: relative;
 }
@@ -844,7 +903,7 @@ li {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0), black);
   width: 100%;
   margin: 0;
-  padding: 10px;
+  padding: .625em;
   font-size: 1.25em;
 }
 
@@ -927,9 +986,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 95%;
-  max-height: 90%;
-  margin: 1em auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 .contenedor__productos .productos .productos__virtual .productos__titulo {
@@ -943,8 +1002,8 @@ li {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2em;
-  margin: 1.5em 2em auto;
-  letter-spacing: 0.25em;
+  margin: 1.5em auto;
+  letter-spacing: 0.2em;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -966,14 +1025,31 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3em auto;
-  width: 90%;
+  margin: 2em auto 3em auto;
+  max-width: 96%;
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__productos .productos .productos__virtual .productos__container {
+    width: 100%;
+    height: 15em;
+    margin: 1em auto 2em;
+  }
 }
 
 .contenedor__productos .productos .productos__virtual .productos__container .productos__video-virtual {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   margin: 1em auto;
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__productos .productos .productos__virtual .productos__container .productos__video-virtual {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
@@ -1234,11 +1310,11 @@ li {
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__titulo--principales {
-  margin: 1em 2em auto;
+  margin: 1em auto 2em;
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__titulo--partners {
-  margin: 2em 0.5em auto;
+  margin: 2em auto 0.5em;
   color: #ffffff;
 }
 
@@ -1478,42 +1554,66 @@ li {
           transform: scale(1);
   -webkit-transition: all .85s ease-in-out;
   transition: all .85s ease-in-out;
+  /* Extra large devices (large desktops, 1200px and up) */
   /* Large devices (desktops, 992px and up) */
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   /* Small devices (landscape phones, 576px and up) */
 }
 
+@media screen and (max-width: 1200px) {
+  .footer .footer__item i {
+    font-size: 1.15rem;
+    margin: 2em 1em 2em auto;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .footer .footer__item i {
-    font-size: 1rem;
-    margin: 2em .5em;
+    font-size: 1.25rem;
+    margin: 2em 1.5em;
   }
 }
 
 @media screen and (max-width: 768px) {
   .footer .footer__item i {
     font-size: 1rem;
-    margin: 2em 2.5em;
+    margin: 2em;
   }
 }
 
 @media screen and (max-width: 576px) {
   .footer .footer__item i {
     font-size: 0.85rem;
-    margin: 2em 1em;
+    margin: 2em 0.5em;
   }
 }
 
 .footer .footer__item--copyR {
   font-size: 1rem;
   margin: 2em auto;
+  /* Extra large devices (large desktops, 1200px and up) */
+  /* Large devices (desktops, 992px and up) */
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   /* Small devices (landscape phones, 576px and up) */
 }
 
+@media screen and (max-width: 1200px) {
+  .footer .footer__item--copyR {
+    font-size: 1em;
+    margin: 1.75em auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer .footer__item--copyR {
+    font-size: 1.1em;
+    margin: 1.75em auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer .footer__item--copyR {
-    font-size: 0.95em;
+    font-size: 1.15em;
     margin: 1.75em auto;
   }
 }

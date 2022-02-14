@@ -119,9 +119,36 @@
             flex-direction: column;
             background-image: linear-gradient (to right bottom, #18263f, #1a2945, #1c2c4c, #1e2e52, #213159, #23335f, #263664, #29386a, #2b3b70, #2e3d77, #31407d, #344284);
             
+            @include tablets {
+                min-height: 25em;
+            }
+
+            @include phones {
+                min-height: 20em;
+            }
+            
+
             .hero__videoResponsive {
+                /*max-width: 100%;
+                min-height: 100%;*/
                 max-width: 100%;
+                object-fit: fill;
                 min-height: 100%;
+
+                @include desktops {
+                    object-fit: cover;
+                    min-height: 100%;
+                }
+
+                @include tablets {
+                    object-fit: cover;
+                    min-height: 100%;
+                }
+
+                @include phones {
+                    object-fit: cover;
+                    min-height: 100%;
+                }
             }
         }
     }
