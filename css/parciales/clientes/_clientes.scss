@@ -51,10 +51,10 @@
             }
 
             .clientes__imgContainer {
-                width: 16em;
-                height: 14rem;
-                margin: 2em;
-                border-radius: 5px;
+                width: 14em;
+                height: 12rem;
+                margin: 1.75em;
+                border-radius: .3em;
                 object-fit: cover;
             }
 
@@ -65,10 +65,10 @@
         }
 
         .clientes__mainMarkets {
-            max-width: 100%;
+            max-width: 96%;
             width: 60em;
             object-fit: contain;
-            border-radius: 1em;
+            border-radius: .6em;
         }
     }
 }

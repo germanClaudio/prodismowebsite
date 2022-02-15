@@ -39,13 +39,18 @@
 		}
 
 		.nosotros__subtitulo--modificado {
-			font-size: 1.5em;
+			font-size: 2.5em;
+			font-weight: 500;
+			letter-spacing: 0.125em;
 			color: #ddd;
-			margin-top: 1.5em;
+			margin: 2.5em auto 1.5em;
+			text-align: center;
 		}
 
 		.container.container--historia {
 			background: $colorFondoContactForm;
+			max-width: 100%;
+			
 		}
 
 		.nosotros__subtitulo--video {
@@ -68,7 +73,9 @@
 
 		.nosotros__video-nos {
 			max-width: 100%;
+			width: 952px;
 			min-height: 100%;
+			object-fit: cover;
 			
 		}
 	}

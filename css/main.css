@@ -1340,10 +1340,10 @@ li {
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__imgContainer {
-  width: 16em;
-  height: 14rem;
-  margin: 2em;
-  border-radius: 5px;
+  width: 14em;
+  height: 12rem;
+  margin: 1.75em;
+  border-radius: .3em;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1356,11 +1356,11 @@ li {
 }
 
 .contenedor__clientes .clientes .clientes__mainMarkets {
-  max-width: 100%;
+  max-width: 96%;
   width: 60em;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 1em;
+  border-radius: .6em;
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
@@ -1420,14 +1420,18 @@ li {
 }
 
 .contenedor__nos .nosotros .nosotros__subtitulo--modificado {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 0.125em;
   color: #ddd;
-  margin-top: 1.5em;
+  margin: 2.5em auto 1.5em;
+  text-align: center;
 }
 
 .contenedor__nos .nosotros .container.container--historia {
   background: -webkit-gradient(linear, left bottom, left top, from(#061c47), color-stop(#6b204c), to(#213c92));
   background: linear-gradient(0deg, #061c47, #6b204c, #213c92);
+  max-width: 100%;
 }
 
 .contenedor__nos .nosotros .nosotros__subtitulo--video {
@@ -1451,7 +1455,10 @@ li {
 
 .contenedor__nos .nosotros .nosotros__video-nos {
   max-width: 100%;
+  width: 952px;
   min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*---------- @MEDIA-QUERIES ----------*/
