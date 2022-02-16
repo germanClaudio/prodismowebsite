@@ -44,13 +44,13 @@ body .background--tecno {
 }
 
 body .background--clientes {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#283048), to(#859398));
-  background-image: linear-gradient(0deg, #283048 0%, #859398 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e1e1e460), to(#efeff075));
+  background-image: linear-gradient(0deg, #e1e1e460 0%, #efeff075 100%);
 }
 
 body .background--nosotros {
-  background-image: -webkit-gradient(linear, left top, right top, from(#304352), to(#d7d2cc));
-  background-image: linear-gradient(90deg, #304352 0%, #d7d2cc 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6f889b), to(#d7d2cc));
+  background-image: linear-gradient(90deg, #6f889b 0%, #d7d2cc 100%);
 }
 
 body .background--contacto {
@@ -918,7 +918,7 @@ li {
   width: 100%;
   margin: 0;
   padding: .625em;
-  font-size: 1.25em;
+  font-size: 1.125em;
 }
 
 .contenedor__productos .productos .galeria__item .galeria__titulo--main {
@@ -1325,18 +1325,145 @@ li {
 
 .contenedor__clientes .clientes .clientes__container .clientes__titulo--principales {
   margin: 1em auto;
+  font-size: 3em;
+  letter-spacing: .25em;
+  text-align: center;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor__clientes .clientes .clientes__container .clientes__titulo--principales {
+    margin: 1em 1em .5em;
+    font-size: 2.6em;
+    letter-spacing: .175em;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .contenedor__clientes .clientes .clientes__container .clientes__titulo--principales {
-    margin: 1em auto .5em;
+    margin: 1em 1em .5em;
+    font-size: 2.6em;
+    letter-spacing: 0.175em;
   }
 }
 
+.contenedor__clientes .clientes .clientes__container .card-group .card.card--corner {
+  border-radius: 1em;
+  -webkit-box-shadow: 4px 4px 10px 1px #5a5a5a;
+          box-shadow: 4px 4px 10px 1px #5a5a5a;
+  min-height: 100%;
+  max-height: 35em;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor__clientes .clientes .clientes__container .card-group .card.card--corner {
+    max-height: 40em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor__clientes .clientes .clientes__container .card-group .card.card--corner {
+    max-height: 32em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__clientes .clientes .clientes__container .card-group .card.card--corner {
+    max-height: 100%;
+  }
+}
+
+.contenedor__clientes .clientes .clientes__container .card .card-img-top.card--opinion {
+  max-height: 11em;
+  max-width: 11em;
+  border-radius: 50%;
+  margin: 1em auto;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor__clientes .clientes .clientes__container .card .card-img-top.card--opinion {
+    max-height: 9em;
+    max-width: 9em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor__clientes .clientes .clientes__container .card .card-img-top.card--opinion {
+    max-height: 8em;
+    max-width: 8em;
+  }
+}
+
+.contenedor__clientes .clientes .clientes__container .card .cliente--imgFace {
+  max-height: 4em;
+  max-width: 4em;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 8px 1px #5a5a5a;
+          box-shadow: 2px 2px 8px 1px #5a5a5a;
+  margin: .8em;
+  /* Extra large devices (large desktops, 1200px and up) */
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedor__clientes .clientes .clientes__container .card .cliente--imgFace {
+    max-height: 4.75em;
+    max-width: 4.75em;
+    margin: .8em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor__clientes .clientes .clientes__container .card .cliente--imgFace {
+    max-height: 3em;
+    max-width: 3em;
+    margin: .65em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor__clientes .clientes .clientes__container .card .cliente--imgFace {
+    max-height: 5em;
+    max-width: 5em;
+    margin: 1.25em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__clientes .clientes .clientes__container .card .cliente--imgFace {
+    max-height: 4em;
+    max-width: 4em;
+    margin: 1em;
+  }
+}
+
+.contenedor__clientes .clientes .clientes__container .card-body.altura--body {
+  height: 100%;
+  font-size: 1em;
+  background-color: #4f4f4fa9;
+  color: #fff;
+}
+
+.contenedor__clientes .clientes .clientes__container .clientes__titulo--opinion {
+  margin: 2em 1.8em 1.7em;
+  color: #1d1414;
+  text-align: center;
+  letter-spacing: .125em;
+}
+
 .contenedor__clientes .clientes .clientes__container .clientes__titulo--partners {
-  margin: 2em auto 0.5em;
-  color: #ffffff;
+  margin: 4em 1.8em .6em;
+  color: #271313;
+  text-align: center;
+  letter-spacing: .1em;
 }
 
 .contenedor__clientes .clientes .clientes__container .clientes__imgContainer {

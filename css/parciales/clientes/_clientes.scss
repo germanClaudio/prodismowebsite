@@ -39,15 +39,111 @@
                         
             .clientes__titulo--principales {
                 margin: 1em auto;
+                font-size: 3em;
+                letter-spacing: .25em;
+                text-align: center;
+
+                @include tablets {
+                    margin: 1em 1em .5em;
+                    font-size: 2.6em;
+                    letter-spacing: .175em;
+                }
 
                 @include phones {
-                    margin: 1em auto .5em;
+                    margin: 1em 1em .5em;
+                    font-size: 2.6em;
+                    letter-spacing: 0.175em;
                 }
             }
 
+            .card-group .card.card--corner {
+                border-radius: 1em;
+                box-shadow: 4px 4px 10px 1px #5a5a5a;
+                min-height: 100%;
+                max-height: 35em;
+
+
+                @include desktops {
+                    max-height: 40em;
+                }
+
+                @include tablets {
+                    max-height: 32em;
+                }
+
+                @include phones {
+                    max-height: 100%;
+                }
+            }
+
+            .card .card-img-top.card--opinion {
+                max-height: 11em;
+                max-width: 11em;
+                border-radius: 50%;
+                margin: 1em auto;
+
+                @include desktops {
+                    max-height: 9em;
+                    max-width: 9em;
+                }
+
+                @include tablets {
+                    max-height: 8em;
+                    max-width: 8em;
+                }
+            }
+
+            .card .cliente--imgFace {
+                max-height: 4em;
+                max-width: 4em;
+                border-radius: 50%;
+                box-shadow: 2px 2px 8px 1px #5a5a5a;
+                margin: .8em;
+
+                @include largeDesktops {
+                    max-height: 4.75em;
+                    max-width: 4.75em;
+                    margin: .8em;
+                }
+
+                @include desktops {
+                    max-height: 3em;
+                    max-width: 3em;
+                    margin: .65em;
+                }
+
+                @include tablets {
+                    max-height: 5em;
+                    max-width: 5em;
+                    margin: 1.25em;
+                }
+
+                @include phones {
+                    max-height: 4em;
+                    max-width: 4em;
+                    margin: 1em;
+                }
+            }
+
+            .card-body.altura--body {
+                height: 100%;
+                font-size: 1em;
+                background-color: #4f4f4fa9;
+                color: #fff;
+            }
+
+            .clientes__titulo--opinion {
+                margin: 2em 1.8em 1.7em;
+                color: #1d1414;
+                text-align: center;
+                letter-spacing: .125em;
+            }
+
             .clientes__titulo--partners {
-                margin: 2em auto 0.5em;
-                color: #ffffff;
+                margin: 4em 1.8em .6em;
+                color: #271313;
+                text-align: center;
+                letter-spacing: .1em;
             }
 
             .clientes__imgContainer {
