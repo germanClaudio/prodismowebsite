@@ -237,11 +237,10 @@
             }
 
             .galeria__img:hover {
-                transform: scale(1.01);
-                box-shadow: 0 0 5px 5px $colorHoverLink;
-                
+                transform: scale(.99);
+                box-shadow: 0 0 5px 1px $colorHoverLink;
+                opacity: .66;
             }
-
 
             .productos__virtual {
                 background-color: #8686863d;
