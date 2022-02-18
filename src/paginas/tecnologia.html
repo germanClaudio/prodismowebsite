@@ -28,7 +28,7 @@
 
 <body>
     <div class="contenedor__tecno background--tecno">
-        <header class="header">
+        <header class="header" data-aos="fade-down" data-aos-duration="1000">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="container-fluid">
@@ -593,12 +593,10 @@
                                         data-bs-slide-to="2" aria-label="Slide 3"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators"
                                         data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                                        data-bs-slide-to="4" aria-label="Slide 5"></button>
                                 </div>
 
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="49000">
+                                    <div class="carousel-item active" data-bs-interval="8000">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <video autoplay muted loop src="/src/multimedia/videos/auto-form-mf.mp4"
                                                 class="d-block w-800" alt="AUTOFORM SOFTWARE" type="video/mp4">
@@ -616,7 +614,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="carousel-item" data-bs-interval="24000">
+                                    <div class="carousel-item" data-bs-interval="8000">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <video autoplay muted loop src="/src/multimedia/videos/e-plan-p8.mp4"
                                                 class="d-block w-800" alt="E-PLANNER SOFTWARE" type="video/mp4">
@@ -624,18 +622,17 @@
                                         <div class="carousel-caption">
                                             <h3>E-PLANNER SOFTWARE</h3>
                                             <div class="carousel-caption-description">
-                                                <p>Programa específico para Ingeniería Eléctrica, o CAE. Asiste en el
+                                                <p>Programa específico de Ingeniería Eléctrica, o CAE. Asiste el
                                                     diseño de esquemas eléctricos y neumáticos, optimizando y
                                                     automatizando al máximo el proceso de desarrollo de un proyecto
                                                     eléctrico. Proporciona bases de datos con información
-                                                    sobre el proyecto, como lista de materiales, relación entradas y
-                                                    salidas PLC, resumen de borneras y conexiones, secuencias
+                                                    sobre el proyecto, BOM, relación in/out salidas PLC, borneras y conexiones, secuencias
                                                     entre otras.</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="carousel-item" data-bs-interval="112000">
+                                    <div class="carousel-item" data-bs-interval="8000">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <video autoplay muted loop src="/src/multimedia/videos/catia-nx.mp4"
                                                 class="d-block w-800" alt="CATIA SOFTWAREE" type="video/mp4">
@@ -644,18 +641,18 @@
                                             <h3>CATIA SOFTWARE</h3>
                                             <div class="carousel-caption-description">
                                                 <p>Software para el Diseño Mecánico CAD de Dispositivos y Máquinas
-                                                    Especiales. Este programa proporciona apoyo desde la concepción del
-                                                    diseño hasta la producción y análisis del producto. Posibilitan la
+                                                    Especiales. El programa proporciona apoyo desde la concepción del
+                                                    diseño hasta la producción y análisis del producto. Posibilita la
                                                     creación de piezas en 3D, 2D, Cálculos de diferentes materiales,
                                                     manejo y creación de superficies, creación de listas de materiales
-                                                    automáticas, todo 100% vinculado con un único diseño. Aquí además
-                                                    definimos tolerancias, cinemáticas, materiales necesarias para la
+                                                    automáticas, todo 100% vinculado con un único diseño. Aquí se
+                                                    defininen tolerancias, cinemáticas, materiales necesarios para la
                                                     construcción de cada elemento y ensambles.</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="carousel-item" data-bs-interval="25000">
+                                    <div class="carousel-item" data-bs-interval="8000">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <video autoplay muted loop src="/src/multimedia/videos/process-simulate.mp4"
                                                 class="d-block w-800" alt="PROCCESS SIMULATE" type="video/mp4">
@@ -664,43 +661,16 @@
                                             <h3>PROCCESS SIMULATE</h3>
                                             <div class="carousel-caption-description">
                                                 <p>Software que permite realizar la simulación mecánica completa de
-                                                    nuestras líneas de ensamble. Nos permite diseñar espacios,
-                                                    dimensionar equipos y validar por ejemplo la accesibilidad y
+                                                    nuestras líneas de ensamble. Permite diseñar espacios,
+                                                    dimensionar equipos y validar la accesibilidad y
                                                     espacios de colisiones entre Robots / Máquinas / Dispositivos, como
-                                                    así también definir y extraer las trayectorias y secuencias de
-                                                    funcionamiento de los mismos. Es una herramienta fundamental para
-                                                    diseñar y comprobar la factibilidad y viabilidad de los procesos de
-                                                    líneas de ensamble como un todo.</p>
+                                                    así también definir y extraer trayectorias y secuencias de
+                                                    funcionamiento de los mismos. Herramienta fundamental para
+                                                    diseñar y comprobar factibilidad y viabilidad de procesos de
+                                                    líneas de ensamble.</p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="carousel-item" data-bs-interval="25000">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video autoplay muted loop
-                                                src="/src/multimedia/videos/virtualCommisioning.mp4"
-                                                class="d-block w-800" alt="VIRTUAL COMMISIONNING" type="video/mp4">
-                                        </div>
-                                        <div class="carousel-caption">
-                                            <h3>VIRTUAL COMMISIONNING</h3>
-                                            <div class="carousel-caption-description">
-                                                <p>A los ya mencionados software Process Simulate y NX, se suma el VCx.
-                                                    Agregamos en un entorno virtual, además de todo lo ya
-                                                    desarrollado (Diseños y Simulaciones), las programaciones off-line
-                                                    de
-                                                    PLCs, HMIs y OLP Robots, y con esto combinado realizamos la puesta
-                                                    en marcha VIRTUAL de la instalación completa que estamos diseñando
-                                                    y/o desarrollando. Esta prueba temprana, nos permite detectar y
-                                                    corregir fallas sin costo alguno, probar y optimizar programas,
-                                                    chequear funcionamientos, verificar tiempos, etc. De esta manera
-                                                    logramos tener programas listos para descargar (Ya probados y
-                                                    depurados) en los equipos reales, disminuyendo los tiempos de puesta
-                                                    en marcha online en campo, y por ende, mejorando los plazos
-                                                    generales del proyecto.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
 
                                 <button class="carousel-control-prev" type="button"

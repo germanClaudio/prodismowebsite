@@ -1596,12 +1596,28 @@ li {
   font-size: 2.5em;
   color: #111;
   margin-top: 0.7em;
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor__nos .nosotros .nosotros__titulo {
+    font-size: 2.25em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__nos .nosotros .nosotros__titulo {
+    font-size: 2em;
+  }
 }
 
 .contenedor__nos .nosotros .nosotros__subtitulo {
-  font-size: 1.5em;
-  color: #444;
-  margin-top: 0.5em;
+  font-size: 2.5em;
+  color: #2f2f2f;
+  margin: 1.5em auto 1.25em;
+  text-align: center;
+  letter-spacing: 0.25em;
 }
 
 .contenedor__nos .nosotros .nosotros__subtitulo--modificado {
@@ -1632,11 +1648,28 @@ li {
 }
 
 .contenedor__nos .nosotros .nosotros__imgOrga {
-  width: 70%;
+  width: 88%;
   margin: 2em auto;
   border-radius: 1em;
-  -webkit-box-shadow: 0 0 20px #eb6ee1bd;
-          box-shadow: 0 0 20px #eb6ee1bd;
+  -webkit-box-shadow: 5px 5px 20px 1px #888;
+          box-shadow: 5px 5px 20px 1px #888;
+  -webkit-transition: all .35s ease-in;
+  transition: all .35s ease-in;
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__nos .nosotros .nosotros__imgOrga {
+    width: 98%;
+    border-radius: .66em;
+  }
+}
+
+.contenedor__nos .nosotros .nosotros__imgOrga:hover {
+  -webkit-box-shadow: -5px -5px 15px 1px #444;
+          box-shadow: -5px -5px 15px 1px #444;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .contenedor__nos .nosotros .nosotros__video-nos {
@@ -1645,6 +1678,46 @@ li {
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.contenedor__nos .nosotros .div-imagen {
+  display: inline-block;
+  position: relative;
+}
+
+.contenedor__nos .nosotros .div-imagen .descripcionFoto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: .85em;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.contenedor__nos .nosotros .div-imagen img.desvanecer {
+  position: relative;
+  opacity: 1;
+  z-index: 10;
+  border-radius: .5em;
+  -webkit-box-shadow: 2px 2px 10px 1px #fcfcfc;
+          box-shadow: 2px 2px 10px 1px #fcfcfc;
+  width: 14em;
+  height: 14em;
+  max-width: 14em;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1em;
+}
+
+.contenedor__nos .nosotros .div-imagen img.desvanecer:hover {
+  opacity: 0.17;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 /*---------- @MEDIA-QUERIES ----------*/

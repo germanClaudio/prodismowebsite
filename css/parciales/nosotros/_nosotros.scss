@@ -30,12 +30,23 @@
 			font-size: 2.5em;
 			color: #111;
 			margin-top: 0.7em;
+
+			@include tablets {
+				font-size: 2.25em;
+			}
+
+			@include phones {
+				font-size: 2em;
+			}
+		
 		}
 
 		.nosotros__subtitulo {
-			font-size: 1.5em;
-			color: #444;
-			margin-top: 0.5em;
+			font-size: 2.5em;
+			color: #2f2f2f;
+			margin: 1.5em auto 1.25em;
+			text-align: center;
+			letter-spacing: 0.25em;
 		}
 
 		.nosotros__subtitulo--modificado {
@@ -50,7 +61,6 @@
 		.container.container--historia {
 			background: $colorFondoContactForm;
 			max-width: 100%;
-			
 		}
 
 		.nosotros__subtitulo--video {
@@ -66,10 +76,21 @@
 		}
 
 		.nosotros__imgOrga {
-			width: 70%;
+			width: 88%;
 			margin: 2em auto;
 			border-radius: 1em;
-			box-shadow: 0 0 20px $colorHoverLink;
+			box-shadow: 5px 5px 20px 1px #888;
+			transition: all .35s ease-in;
+
+			@include phones {
+				width: 98%;
+				border-radius: .66em;
+			}
+		}
+
+		.nosotros__imgOrga:hover {
+			box-shadow: -5px -5px 15px 1px #444;
+			transform: scale(.99);
 		}
 
 		.nosotros__video-nos {
@@ -79,6 +100,44 @@
 			object-fit: cover;
 			
 		}
+
+		.div-imagen {
+			display: inline-block;
+			position: relative;
+			
+			.descripcionFoto {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1;
+				padding: 10px;
+				margin: 0 auto;
+				font-size: .85em;
+				font-weight: 400;
+				color: $blanco;
+			}
+
+			img.desvanecer {
+				position: relative;
+				opacity: 1;
+				z-index: 10;
+				border-radius: .5em;
+				box-shadow: 2px 2px 10px 1px #fcfcfc;
+				width: 14em;
+				height: 14em;
+				max-width: 14em;
+				max-height: 100%;
+				object-fit: cover;
+				margin-right: 1em;
+			}
+		  
+			img.desvanecer:hover {
+				opacity: 0.17;
+				transition: opacity 500ms;
+			}
+
+		}  
 	}
 
 }
