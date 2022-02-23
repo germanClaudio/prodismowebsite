@@ -83,8 +83,6 @@
 			transition: all .35s ease-in;
 
 			@include phones {
-				/*width: 98%;
-				border-radius: .66em;*/
 				display: none;
 			}
 		}
@@ -124,7 +122,6 @@
 		.div-imagen {
 			display: inline-block;
 			position: relative;
-			/*overflow: hidden;*/
 			
 			.descripcionFoto {
 				position: absolute;
@@ -151,6 +148,7 @@
 				max-height: 100%;
 				object-fit: cover;
 				margin-right: 1em;
+				overflow: hidden;
 			}
 		  
 			img.desvanecer:hover {

@@ -968,8 +968,10 @@ li {
 }
 
 .contenedor__productos .productos .galeria__item .galeria__titulo--main {
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 600;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#0c029b));
   background: linear-gradient(270deg, rgba(255, 255, 255, 0), #0c029b);
 }
@@ -1660,8 +1662,6 @@ li {
 
 @media screen and (max-width: 576px) {
   .contenedor__nos .nosotros .nosotros__imgEquipo {
-    /*width: 98%;
-				border-radius: .66em;*/
     display: none;
   }
 }
@@ -1711,7 +1711,6 @@ li {
 .contenedor__nos .nosotros .div-imagen {
   display: inline-block;
   position: relative;
-  /*overflow: hidden;*/
 }
 
 .contenedor__nos .nosotros .div-imagen .descripcionFoto {
@@ -1741,6 +1740,7 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 1em;
+  overflow: hidden;
 }
 
 .contenedor__nos .nosotros .div-imagen img.desvanecer:hover {
