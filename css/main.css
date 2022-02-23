@@ -1647,7 +1647,7 @@ li {
   margin: 1em;
 }
 
-.contenedor__nos .nosotros .nosotros__imgOrga {
+.contenedor__nos .nosotros .nosotros__imgEquipo {
   width: 88%;
   margin: 2em auto;
   border-radius: 1em;
@@ -1659,13 +1659,41 @@ li {
 }
 
 @media screen and (max-width: 576px) {
-  .contenedor__nos .nosotros .nosotros__imgOrga {
+  .contenedor__nos .nosotros .nosotros__imgEquipo {
+    /*width: 98%;
+				border-radius: .66em;*/
+    display: none;
+  }
+}
+
+.contenedor__nos .nosotros .nosotros__imgEquipo:hover {
+  -webkit-box-shadow: -5px -5px 15px 1px #444;
+          box-shadow: -5px -5px 15px 1px #444;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.contenedor__nos .nosotros .nosotros__imgEquipo--phones {
+  display: none;
+  width: 88%;
+  margin: 2em auto;
+  border-radius: 1em;
+  -webkit-box-shadow: 5px 5px 20px 1px #888;
+          box-shadow: 5px 5px 20px 1px #888;
+  -webkit-transition: all .35s ease-in;
+  transition: all .35s ease-in;
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__nos .nosotros .nosotros__imgEquipo--phones {
+    display: block;
     width: 98%;
     border-radius: .66em;
   }
 }
 
-.contenedor__nos .nosotros .nosotros__imgOrga:hover {
+.contenedor__nos .nosotros .nosotros__imgEquipo--phones:hover {
   -webkit-box-shadow: -5px -5px 15px 1px #444;
           box-shadow: -5px -5px 15px 1px #444;
   -webkit-transform: scale(0.99);
@@ -1683,6 +1711,7 @@ li {
 .contenedor__nos .nosotros .div-imagen {
   display: inline-block;
   position: relative;
+  /*overflow: hidden;*/
 }
 
 .contenedor__nos .nosotros .div-imagen .descripcionFoto {

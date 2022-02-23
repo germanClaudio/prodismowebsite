@@ -29,7 +29,7 @@
 
 <body>
 	<div class="contenedor background--index">
-		<header class="header" data-aos="fade-down" data-aos-duration="500">
+		<header class="header" data-aos="fade-down" data-aos-duration="1000">
 			<div class="container-fluid">
 				<nav class="navbar navbar-expand-md navbar-light">
 					<div class="container-fluid">
@@ -307,7 +307,9 @@
 		crossorigin="anonymous"></script>
 
 	<script>
-		AOS.init();
+		AOS.init({
+			once: true,
+		});
 	</script>
 
 	<script>

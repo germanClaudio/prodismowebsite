@@ -28,7 +28,7 @@
 
 <body>
     <div class="contenedor__nos background--nosotros">
-        <header class="header" data-aos="fade-down" data-aos-duration="500">
+        <header class="header" data-aos="fade-down" data-aos-duration="1000">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="container-fluid">
@@ -98,7 +98,7 @@
                 <div class="card-group mx-xl-5 mx-lg-5 mx-md-1 mx-sm-auto my-5">
                     <div class="row mx-auto my-4">
                         <div class="col-md-4 col-sm-12 my-3 mx-auto text-center">
-                            <div class="div-imagen">
+                            <div class="div-imagen" data-aos="fade-right" data-aos-duration="1500">
                                 <div class="descripcionFoto">
                                     CEO<br>Ing. Alejandro Pedrosa
                                 </div>
@@ -107,7 +107,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-12 my-3 mx-auto text-center">
-                            <div class="div-imagen">
+                            <div class="div-imagen" data-aos="fade-down" data-aos-duration="1500">
                                 <div class="descripcionFoto">
                                     Gte. Fabricación<br>Ing. Damián Pedrosa
                                 </div>
@@ -116,7 +116,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-12 my-3 mx-auto text-center">
-                            <div class="div-imagen">
+                            <div class="div-imagen" data-aos="fade-left" data-aos-duration="1500">
                                 <div class="descripcionFoto">
                                     Gte. Cormercial<br>CPN Jano Pedrosa
                                 </div>
@@ -127,13 +127,15 @@
                 </div>
             </div>
 
-
-
-
-
-
             <h3 class="nosotros__subtitulo">Equipo Prodismo</h3>
-            <img class="nosotros__imgOrga" src="/src/multimedia/images/equipoProdismo1.jpg" alt="Organigrama Prodismo">
+            <img class="nosotros__imgEquipo" src="/src/multimedia/images/equipoProdismo1.jpg" alt="Equipo Prodismo 1">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo2.jpg" alt="Equipo Prodismo 2">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo3.jpg" alt="Equipo Prodismo 3">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo4.jpg" alt="Equipo Prodismo 4">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo5.jpg" alt="Equipo Prodismo 5">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo6.jpg" alt="Equipo Prodismo 6">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo7.jpg" alt="Equipo Prodismo 7">
+            <img class="nosotros__imgEquipo--phones" src="/src/multimedia/images/equipoProdismo8.jpg" alt="Equipo Prodismo 8">
             <h3 class="nosotros__subtitulo--modificado">Presentación Prodismo</h3>
             <div class="container container--historia">
                 <div class="row">
@@ -202,7 +204,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script>
-        AOS.init();
+        AOS.init({
+			once: true,
+		});
     </script>
     <script>
         $(function () {

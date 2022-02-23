@@ -75,7 +75,7 @@
 			margin: 1em; 
 		}
 
-		.nosotros__imgOrga {
+		.nosotros__imgEquipo {
 			width: 88%;
 			margin: 2em auto;
 			border-radius: 1em;
@@ -83,12 +83,33 @@
 			transition: all .35s ease-in;
 
 			@include phones {
+				/*width: 98%;
+				border-radius: .66em;*/
+				display: none;
+			}
+		}
+
+		.nosotros__imgEquipo:hover {
+			box-shadow: -5px -5px 15px 1px #444;
+			transform: scale(.99);
+		}
+
+		.nosotros__imgEquipo--phones {
+			display: none;
+			width: 88%;
+			margin: 2em auto;
+			border-radius: 1em;
+			box-shadow: 5px 5px 20px 1px #888;
+			transition: all .35s ease-in;
+
+			@include phones {
+				display: block;
 				width: 98%;
 				border-radius: .66em;
 			}
 		}
 
-		.nosotros__imgOrga:hover {
+		.nosotros__imgEquipo--phones:hover {
 			box-shadow: -5px -5px 15px 1px #444;
 			transform: scale(.99);
 		}
@@ -98,12 +119,12 @@
 			width: 952px;
 			min-height: 100%;
 			object-fit: cover;
-			
 		}
 
 		.div-imagen {
 			display: inline-block;
 			position: relative;
+			/*overflow: hidden;*/
 			
 			.descripcionFoto {
 				position: absolute;
