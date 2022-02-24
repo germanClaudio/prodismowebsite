@@ -9,14 +9,14 @@ $background: (
     tecno: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%),
     clientes: linear-gradient(0deg, #e1e1e460 0%, #efeff075 100%),
     nosotros: linear-gradient(90deg, #6f889b 0%, #d7d2cc 100%),
-    contacto: url("https://picsum.photos/id/115/2000/1600/?blur=5")
+    contacto: linear-gradient(45deg, #9bc4cd 20%, #788689 65%, #f9fbfd 95%)
 );
 
-$colorHoverLink:  #eb6ee1bd;
+$colorHoverLink:  #c966c0bd;
 
 $colorHeader: linear-gradient(135deg, rgba(33,44,114,1) 0%, rgba(34,57,140,1) 40%, rgba(33,69,155,1) 100%); 
 
-$colorFooter: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgb(54, 54, 54) 20%, rgb(36, 36, 36) 75%); 
+$colorFooter:  linear-gradient(to top, #230817, #2b1526, #322035, #372c45, #3a3954, #3a3d59, #3a425d, #3a4661, #39425c, #373e58, #363a53, #34364e); 
 
 $colorHero: linear-gradient(180deg, rgba(6,34,91,0.77) 0%, rgba(24,46,116,0.78) 24%, rgba(24,48,150,0.8) 69%);
 

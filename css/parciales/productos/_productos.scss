@@ -32,10 +32,11 @@
         grid-area: main__productos;
         width: 100%;
         margin: auto;
+        overflow: hidden;
 
         @include tablets {
             margin: auto;
-            width: 100%;
+            width: 99%;
         }
 
         @include phones {
@@ -58,7 +59,7 @@
                 grid-auto-rows: 14em;
                 grid-gap: 1em;
                 padding: 2em 3em;
-                
+
                 .galeria__item:nth-child(1) {
                     grid-column-start: span 3;
                 }

@@ -21,13 +21,14 @@
     .clientes {
         grid-area: mainClientes;
         max-height: 100%;
-        max-width: 94%;
+        max-width: 97%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         margin: .5em auto;
+        overflow: hidden;        
 
         .clientes__container {
             width: 100%;
@@ -64,8 +65,7 @@
                 min-height: 100%;
                 max-height: 35em;
                 transition: all .5s ease;
-
-
+                
                 @include desktops {
                     max-height: 40em;
                 }
@@ -77,6 +77,7 @@
                 @include phones {
                     max-height: 100%;
                 }
+
             }
 
             .card-group .card.card--corner:hover {
@@ -158,12 +159,13 @@
                 width: 14em;
                 height: 12rem;
                 margin: 1.75em;
-                border-radius: .3em;
                 object-fit: cover;
+                border-radius: .8em;
+                box-shadow:  -10px -10px 13px #acacac, 10px 10px 13px #ececec;
             }
 
             .clientes__imgContainer:hover {
-                transform: scale(1.1);
+                transform: scale(1.02);
                 box-shadow: 0 0 20px $colorHoverLink;	
             }
         }
@@ -173,6 +175,7 @@
             width: 60em;
             object-fit: contain;
             border-radius: .6em;
+            box-shadow:  -10px -10px 13px #ececec, 10px 10px 13px #acacac;
         }
     }
 }

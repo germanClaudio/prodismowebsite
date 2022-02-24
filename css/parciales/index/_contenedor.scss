@@ -16,6 +16,7 @@
 		'contenido		contenido 	aside'
 		'footer	 		footer 		footer';
     justify-items: center;
+    overflow: hidden;
     
     @include desktops {
             grid-template-rows: repeat(5, auto);
@@ -196,8 +197,8 @@
 
             .cardBtnColor {
                 background-image: $colorBtnCard;
-                margin: 10px;
-                padding: 6px 45px;
+                margin: .63em;
+                padding: .38em 2.8em;
                 text-align: center;
                 transition: all 0.9s ease;
                 background-size: 200% auto;
@@ -206,6 +207,10 @@
                 border-radius: 0.625em;
                 display: block;
                 cursor: pointer;
+
+                @include phones {
+                    padding: 6px 45px;
+                }
             }
             
             .cardBtnColor:hover {
@@ -239,7 +244,8 @@
         justify-content: space-around;
         padding: 1.5em; 
         text-align: center;
-        min-height: 5.25em; 
+        min-height: 5.25em;
+        max-height: 100%; 
         background: $colorSidebar;
         border-radius: 1em;
         width: 90%;
@@ -301,11 +307,11 @@
             }
         
         .sidebar__contenedor .sidebar__bio {
-            margin-bottom: 1.5em; 
+            margin-bottom: 3.5em; 
             font-size: 1.25em; 
             line-height: 1.5em;
             color: #ddd;
-            
+                        
             .sidebar__titulo {
                 font-size: 1.35em; 
                 line-height: 1.5em;
@@ -317,7 +323,7 @@
             .sidebar__parrafo {
                 font-size: .85em; 
                 line-height: 2em;
-                margin-bottom: 2em; 
+                margin-bottom: 2em;
             }
         }
 
