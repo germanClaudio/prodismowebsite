@@ -634,20 +634,26 @@ li {
 
 .contenedor .sidebar .sidebar__contenedor .sidebar__img-empresa {
   border-radius: 100%;
-  max-height: 10em;
-  width: 10em;
+  max-height: 11em;
+  width: 11em;
+  margin-top: .5rem;
   margin-bottom: 1rem;
+  -webkit-box-shadow: 0 0 5px 1px #ffffff;
+          box-shadow: 0 0 5px 1px #ffffff;
   -webkit-transform: scale(1) translateY(0);
           transform: scale(1) translateY(0);
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .contenedor .sidebar .sidebar__img-empresa:hover {
-  -webkit-transform: scale(1.4) translateY(-1.25em);
-          transform: scale(1.4) translateY(-1.25em);
-  -webkit-box-shadow: 0 0 2em #c966c0bd;
-          box-shadow: 0 0 2em #c966c0bd;
+  border-radius: 4%;
+  -webkit-box-shadow: 0 0 20xp 2px #c966c0bd;
+          box-shadow: 0 0 20xp 2px #c966c0bd;
+  -webkit-transform: scale(1.25) translateY(-0.5em);
+          transform: scale(1.25) translateY(-0.5em);
   /* Extra large devices (large desktops, 1200px and up) */
   /* Large devices (desktops, 992px and up) */
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
