@@ -104,10 +104,10 @@ li {
 
 #scrollUp {
   border-radius: 50%;
-  bottom: 10em;
-  right: 1.8em;
-  width: 4em;
-  height: 4em;
+  bottom: 3.25em;
+  right: .3em;
+  width: 3.4em;
+  height: 3.4em;
   background: url("/src/multimedia/images/upArrow.jpg");
   background-size: cover;
 }
@@ -526,7 +526,7 @@ li {
   color: #ffffff;
 }
 
-.contenedor .contenido .card .cardBtnColor {
+.contenedor .contenido .card .btn.cardBtnColor {
   background-image: -webkit-gradient(linear, left top, right top, from(#3a6186), color-stop(61%, #89253e), to(#3a6186));
   background-image: linear-gradient(to right, #3a6186 0%, #89253e 61%, #3a6186 100%);
   margin: .63em;
@@ -545,14 +545,14 @@ li {
 }
 
 @media screen and (max-width: 576px) {
-  .contenedor .contenido .card .cardBtnColor {
+  .contenedor .contenido .card .btn.cardBtnColor {
     padding: 6px 45px;
   }
 }
 
-.contenedor .contenido .card .cardBtnColor:hover {
+.contenedor .contenido .card .btn.cardBtnColor:hover {
   background-position: right center;
-  color: #ffffff;
+  color: #aec5ec;
   text-decoration: none;
   -webkit-box-shadow: -4px -4px 8px 1px #2f324194;
           box-shadow: -4px -4px 8px 1px #2f324194;
@@ -693,6 +693,7 @@ li {
   font-size: .85em;
   line-height: 2em;
   margin-bottom: 2em;
+  padding: 0 2em;
 }
 
 .contenedor .sidebar .sidebar__menu {
@@ -1416,6 +1417,8 @@ li {
           box-shadow: 4px 4px 10px 1px #5a5a5a;
   min-height: 100%;
   max-height: 35em;
+  max-width: 95%;
+  margin: 0 auto;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   /* Large devices (desktops, 992px and up) */
@@ -1662,7 +1665,7 @@ li {
 .contenedor__nos .nosotros .nosotros__parrafo {
   font-size: 1.1em;
   color: #eee;
-  margin: 1em;
+  margin: 1.25em 2.5em;
 }
 
 .contenedor__nos .nosotros .nosotros__imgEquipo {
@@ -1704,7 +1707,7 @@ li {
 @media screen and (max-width: 576px) {
   .contenedor__nos .nosotros .nosotros__imgEquipo--phones {
     display: block;
-    width: 98%;
+    width: 90%;
     border-radius: .66em;
   }
 }
@@ -1735,11 +1738,35 @@ li {
   left: 0;
   width: 100%;
   z-index: 1;
-  padding: 10px;
+  padding: .625em;
   margin: 0 auto;
   font-size: .85em;
   font-weight: 400;
   color: #ffffff;
+  /* Large devices (desktops, 992px and up) */
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Small devices (landscape phones, 576px and up) */
+}
+
+@media screen and (max-width: 992px) {
+  .contenedor__nos .nosotros .div-imagen .descripcionFoto {
+    z-index: 100;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor__nos .nosotros .div-imagen .descripcionFoto {
+    z-index: 100;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contenedor__nos .nosotros .div-imagen .descripcionFoto {
+    z-index: 100;
+    font-weight: 500;
+  }
 }
 
 .contenedor__nos .nosotros .div-imagen img.desvanecer {
@@ -1761,8 +1788,8 @@ li {
 
 .contenedor__nos .nosotros .div-imagen img.desvanecer:hover {
   opacity: 0.17;
-  -webkit-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: opacity 600ms;
+  transition: opacity 600ms;
 }
 
 /*---------- @MEDIA-QUERIES ----------*/

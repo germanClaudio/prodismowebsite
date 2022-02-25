@@ -154,7 +154,6 @@
         }
     }
 
-
     .contenido {
         grid-area: contenido;
         display: flex;
@@ -195,7 +194,7 @@
                 color: $blanco;
             }
 
-            .cardBtnColor {
+            .btn.cardBtnColor {
                 background-image: $colorBtnCard;
                 margin: .63em;
                 padding: .38em 2.8em;
@@ -213,9 +212,9 @@
                 }
             }
             
-            .cardBtnColor:hover {
+            .btn.cardBtnColor:hover {
                 background-position: right center;
-                color: $blanco;
+                color: #aec5ec;
                 text-decoration: none;
                 box-shadow: -4px -4px 8px 1px #2f324194;
             }
@@ -235,7 +234,6 @@
             }
         }
     }
-
 
     .sidebar {
         grid-area: aside;
@@ -324,6 +322,7 @@
                 font-size: .85em; 
                 line-height: 2em;
                 margin-bottom: 2em;
+                padding: 0 2em;
             }
         }
 
